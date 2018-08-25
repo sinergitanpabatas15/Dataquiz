@@ -1,0 +1,192 @@
+body {
+  font-family: "Lato", arial, sans-serif;
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 1.48;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-t1 {
+  font-size: 2em;
+}
+
+.u-t5 {
+  font-size: 0.9em;
+}
+
+.u-background, .c-left {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)), url("https://res.cloudinary.com/dkzj4hdmd/image/upload/v1498530840/ELFADSC08956_TP_V_wqqxok.jpg");
+  background-position: center, center;
+  background-size: cover, cover;
+}
+
+.c-left, .c-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.c-container {
+  align-items: center;
+  height: 100%;
+  padding: 0 1em;
+  z-index: 1030;
+  font-size: 1em;
+}
+
+.active {
+  border-bottom: solid 2px white !important;
+}
+
+.c-change {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.c-change button {
+  width: 49%;
+  font-size: 0.9em;
+}
+
+.c-change--btn {
+  display: inline-block;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  text-align: center;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.c-left {
+  background-position: center, center;
+  color: white;
+  padding: 1em 2em;
+  min-height: 80vh;
+  transition: 300ms;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  max-width: 80%;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  backface-visibility: hidden;
+  z-index: inherit;
+}
+.c-left--title {
+  margin: 0;
+}
+
+label {
+  font-size: 0.8em;
+}
+
+input:not([type=submit]) {
+  display: block;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 0.5em;
+  padding: 5px;
+  transition: 300ms;
+  font-size: 1em;
+}
+input:not([type=submit]):focus {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 1px 1px 5px 0px rgba(33, 150, 243, 0.3);
+}
+
+.c-btn {
+  background: #8bc34a;
+  color: inherit;
+  border: 0;
+  padding: 0.5em 1em;
+  width: 100%;
+  border-radius: 1em;
+  font-size: 0.8em;
+  transition: 400ms;
+}
+.c-btn[type=submit] {
+  margin-top: 1em;
+}
+.c-btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.c-form--text {
+  text-align: center;
+  font-size: 0.8em;
+  margin: 0.5em 0;
+}
+
+.t-facebook {
+  background: #3b5998;
+}
+
+.t-flip {
+  animation: flip ease 1s;
+}
+
+.t-flip-reverse {
+  animation: flip-reverse ease 1s;
+}
+
+.c-right {
+  display: none;
+}
+
+.u-background {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(10px) saturate(50%);
+}
+@keyframes flip {
+  0% {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(360deg);
+  }
+}
+@keyframes flip-reverse {
+  0% {
+    opacity: 1;
+    transform: rotateY(360deg);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

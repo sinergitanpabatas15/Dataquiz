@@ -1,0 +1,26 @@
+html
+html(lang="en")
+head
+    title Login Page
+body
+    div.u-background
+    section.c-container.login-wrapper
+        div.c-left
+            h1.c-left--title.u-t1.u-text-center Mortha.
+            div.c-change
+                button.c-change--btn.active#signin Sign In
+                button.c-change--btn#signup Sign Up
+            form
+            div.c-form-group
+                label(for="username") Username
+                input(type="text" name="username" placeholder="Username")
+            div.c-form-group
+                label(for="password") Password
+                input(type="password" name="password" placeholder="Password")
+            input.c-btn#loginbtn(type="submit" value="Login")
+            p.c-form--text OR
+            button.c-btn.t-facebook#facebook Login using Facebook
+        div.c-right
+    link(rel="stylesheet", href="./main.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato|Permanent+Marker")
+    script(src="./main.js")
