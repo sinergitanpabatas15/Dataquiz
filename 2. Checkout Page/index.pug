@@ -1,0 +1,44 @@
+html
+html(lang="en")
+meta(name="viewport" content="width=device-width, initial-scale=1.0")
+head
+    title Login Page
+body
+    div.c-container
+        section.c-product
+            h1.u-t3.u-text-center.c-product--brand Nintendo
+            h2.u-t2.u-text-center.c-product--name Nintendo Switch
+            img.c-product-image(src="https://res.cloudinary.com/dkzj4hdmd/image/upload/v1535197484/bundle_mta_1-2-switch_front_j4kwm0.jpg")
+            figure.u-text-center.c-product--price $299.99
+            button.c-product--cart
+                i.fas.fa-cart-arrow-down
+        section.c-checkout(aria-hidden="true")
+            h2.c-checkout--title.u-t1.u-text-center Checkout
+            form.c-checkout--form
+                div.c-checkout--wrapper
+                    div.c-checkout--group
+                        label(for="name") Full Name
+                        input(type="text" name="name" placeholder="Name" value="Verona White")
+                    div.c-checkout--group
+                        label(for="creditcard") Card Number
+                        input(type="text" name="creditcard" placeholder="Credit Card Number" value="4123 4123 4123 4123")
+                    div.c-checkout--group.c-checkout__dropdown
+                        label(for="type") Card Type
+                        select(name="type")
+                            option(value="") -- Select -- 
+                            option(value="visa" selected) Visa
+                            option(value="mastercard") MasterCard
+                            option(value="ae") American Express
+                    div.c-checkout--group
+                        label(for="valid") Valid
+                        input(type="text" name="valid" placeholder="MM/YY" value="12/28")
+                    div.c-checkout--group
+                        label(for="cvv") CVV
+                        input(type="password" name="cvv" placeholder="CVV" value="333")
+            input.c-checkout--submit(type="submit" value="Purchase")
+    
+    link(rel="stylesheet", href="./main.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Francois+One|Lato")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.2.0/css/all.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css")
+    script(src="./main.js")

@@ -1,0 +1,136 @@
+//TODO: desktop version
+
+//text color
+$text: rgba(33, 33, 33,1.0)
+$grey: rgba(97, 97, 97,1.0)
+$darkgrey: rgba(33, 33, 33,1.0)
+$cta-btn: linear-gradient(45deg, rgba(76, 175, 80,1.0), rgba(102, 187, 106,1.0))
+$cta-btn-light: linear-gradient(45deg, rgba(46, 125, 50,1.0), rgba(102, 187, 106,1.0))
+
+//mobile query based on bootstrap
+$phone: "only screen and (min-width : 576px)"
+$tablet: "only screen and (min-width : 768px)"
+$laptop: "only screen and (min-width : 992px)"
+$desktop: "only screen and (min-width : 1200px)"
+
+body
+  font-family: 'Lato', arial, sans-serif
+  font-size: 1em
+  padding: 0
+  margin: 0
+  line-height: 1.48
+  background: linear-gradient(45deg, rgba(3, 169, 244,0.7), rgba(3, 169, 244,1))
+  color: $text
+  
+div
+  box-sizing: border-box
+
+h1,h2,h3,h4,h5
+  font-family: 'Francois One', sans-serif
+
+.u-text-center
+  text-align: center
+
+.u-t1
+  font-size: 2em
+
+.u-t2
+  font-size: 1.5em
+
+.u-t3
+  font-size: 1.2em
+
+.u-t5
+  font-size: 0.9em
+  
+%flex-center
+  display: flex
+  flex-flow: column wrap
+  justify-content: center
+
+.c-container
+  @extend %flex-center
+  align-items: center
+  width: 100%
+  min-height: 100vh
+  padding: 1em
+  
+.c-product
+  @extend %flex-center
+  position: relative
+  align-items: center
+  background: white
+  border-radius: 10px
+  padding: 2em
+  box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.2)
+  &--brand
+    color: $grey
+    text-transform: uppercase
+    margin: 0
+  &--name
+    margin: 0
+  &-image
+    width: 100%
+  &--price
+    font-family: 'Francois One', sans-serif
+    font-size: 1.4em
+    margin: 0
+  &--cart
+    @extend %flex-center
+    position: absolute
+    bottom: -1.4em
+    background: $cta-btn
+    border: 0
+    border-radius: 50%
+    width: 3em
+    height: 3em
+    color: white
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2)
+    transition: 500ms
+    &:hover
+      cursor: pointer
+      background: $cta-btn-light
+    
+.c-checkout
+  display: none
+  font-family: 'Francois One', sans-serif
+  background: $darkgrey
+  color: white
+  border-radius: 10px
+  box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.2)
+  &--wrapper
+    padding: 0 1em
+    padding-bottom: 1em
+  &--title
+    margin-top: 1em
+    margin-bottom: 0.5em
+  &--group
+    margin: 1em
+  label
+    @extend .u-text-center
+    display: block
+  input:not([type="submit"]), select
+    @extend .u-text-center
+    background: $darkgrey
+    border: 0
+    border-bottom: solid 2px $grey
+    font-family: inherit
+    color: inherit
+  input
+    width: 100%
+  select
+    width: 100%
+    appearance: none
+  &--submit
+    font-family: inherit
+    color: inherit
+    width: 100%
+    background: linear-gradient(45deg, rgba(2, 136, 209,0.8), rgba(25, 118, 210,1.0))
+    border: 0
+    padding: 1em 2em
+    text-transform: uppercase
+    transition: 500ms
+    border-radius: 0 0 10px 10px
+    &:hover
+      cursor: pointer
+      background: linear-gradient(45deg, rgba(2, 136, 209,1.0), rgba(25, 118, 210,1.0))
