@@ -18,6 +18,8 @@ body
   font-size: 1em
   padding: 0
   margin: 0
+  width: 100%
+  height: 100%
   line-height: 1.48
   background: linear-gradient(45deg, rgba(3, 169, 244,0.7), rgba(3, 169, 244,1))
   color: $text
@@ -27,6 +29,7 @@ div
 
 h1,h2,h3,h4,h5
   font-family: 'Francois One', sans-serif
+  margin: 0
 
 .u-text-center
   text-align: center
@@ -54,6 +57,8 @@ h1,h2,h3,h4,h5
   width: 100%
   min-height: 100vh
   padding: 1em
+  @media #{$laptop}
+    flex-flow: row wrap
   
 .c-product
   @extend %flex-center
@@ -63,30 +68,39 @@ h1,h2,h3,h4,h5
   border-radius: 10px
   padding: 2em
   box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.2)
+  @media #{$laptop}
+    width: 100%
+    height: 100%
+    max-height: 550px
+    max-width: 550px
   &--brand
     color: $grey
     text-transform: uppercase
-    margin: 0
-  &--name
-    margin: 0
   &-image
     width: 100%
+    max-width: 450px
   &--price
     font-family: 'Francois One', sans-serif
     font-size: 1.4em
-    margin: 0
   &--cart
     @extend %flex-center
     position: absolute
-    bottom: -1.4em
+    bottom: -1.8em
     background: $cta-btn
     border: 0
     border-radius: 50%
-    width: 3em
-    height: 3em
+    width: 3.5em
+    height: 3.5em
     color: white
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2)
-    transition: 500ms
+    z-index: 2
+    @media #{$laptop}
+      top: 3em
+      right: -1.8em
+      bottom: auto
+    .fas
+      font-size: 1.2em
+      text-align: center
     &:hover
       cursor: pointer
       background: $cta-btn-light
@@ -98,6 +112,9 @@ h1,h2,h3,h4,h5
   color: white
   border-radius: 10px
   box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.2)
+  z-index: -1
+  @media #{$laptop}
+    border-radius: 0 10px 10px 0
   &--wrapper
     padding: 0 1em
     padding-bottom: 1em
@@ -131,6 +148,36 @@ h1,h2,h3,h4,h5
     text-transform: uppercase
     transition: 500ms
     border-radius: 0 0 10px 10px
+    @media #{$laptop}
+      border-radius: 0 0 10px 0
     &:hover
       cursor: pointer
       background: linear-gradient(45deg, rgba(2, 136, 209,1.0), rgba(25, 118, 210,1.0))
+ 
+.active
+  display: block
+  animation: fade-in 0.8s
+  @media #{$laptop}
+    animation: fade-in-desktop 0.8s
+  
+.deactive
+  animation: fade-in reverse 0.8s
+  @media #{$laptop}
+    animation: fade-in-desktop reverse 0.8s
+
+@keyframes fade-in
+  0%
+    transform: translateY(-100%)
+    opacity: 0
+  100%
+    transform: translateY(0)
+    opacity: 1
+  
+
+@keyframes fade-in-desktop
+  0%
+    transform: translateX(-100%)
+    opacity: 0
+  100%
+    transform: translateX(0)
+    opacity: 1
