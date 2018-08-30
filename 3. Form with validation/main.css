@@ -1,0 +1,81 @@
+div {
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Helvetica", sans-serif;
+  height: 100vh;
+}
+
+label {
+  position: relative;
+}
+
+.form-wrapper {
+  padding: 0.5em;
+}
+
+input {
+  border: solid 1px darkgrey;
+  border-radius: 5px;
+  padding: 1.4em 0.5em 0.6em 0.5em;
+  color: black;
+  margin-top: 1em;
+}
+input:focus .label {
+  transform: translateY(10px);
+}
+input:focus:invalid {
+  border: solid 1px #F44336;
+}
+
+input[type=submit] {
+  background: #2196f3;
+  width: 100%;
+  font-size: 1.2em;
+  color: white;
+  padding: 1em;
+  margin: 0;
+  border: 0;
+  font-weight: bold;
+  transition: 300ms;
+}
+input[type=submit]:hover {
+  cursor: pointer;
+  background: #2196f3;
+}
+
+span[class^=label-] {
+  position: absolute;
+  display: block;
+  transform: translateY(-3px);
+  transition: all linear 400ms;
+  top: -2px;
+  left: 8px;
+  font-size: 0.8em;
+  opacity: 0.9;
+  min-width: 200px;
+  cursor: text;
+}
+
+input:focus + span[class^=label-] {
+  transform: translateY(-15px);
+  font-size: 0.7em;
+}
+
+.alert-required {
+  display: none;
+  font-size: 0.8rem;
+  color: #F44336;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+.alert-required.invalid {
+  display: block;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,54 @@
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <title>Basic Form with validations</title>
+</head>
+
+<body>
+    <div class="form">
+        <h1>Join Us</h1>
+        <form action="" class="form-group">
+            
+            <div class="form-wrapper">
+                <label>
+                    <input type="text" name="firstname" minlength="1" maxlength="20" id="firstname" placeholder="" required>
+                    <span role="label" class="label-firstname">First Name *</span>
+                    <span class="alert-required" aria-live="polite">Please enter your first name.</span>
+                </label>
+            </div>
+            
+            <div class="form-wrapper">
+                <label>
+                    <input type="text" name="lastname" minlength="1" maxlength="20" id="lastname" placeholder="" required>
+                    <span role="label" class="label-lastname">Last Name *</span>
+                    <span class="alert-required" aria-live="polite">Please enter your last name.</span>
+                </label>
+            </div>
+            
+            <div class="form-wrapper">
+                <label>
+                    <input type="email" name="email" id="email" placeholder="" required>
+                    <span role="label" class="label-email">Email *</span>
+                    <span class="alert-required" aria-live="polite">Please enter your email.</span>
+                </label>
+            </div>
+            
+            <div class="form-wrapper">
+                <label>
+                    <input type="tel" name="phone" id="phone" minlength="6" placeholder="">
+                    <span role="label" class="label-phone">Phone Number (Optional)</span>
+                    <span class="alert-required" aria-live="polite">Please enter numbers only.</span>
+                </label>
+            </div>
+            
+            <div class="form-wrapper">
+                <input type="submit" value="SEND" id="submit">
+            </div>
+            
+        </form>
+    </div>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Francois+One|Lato" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <script src="./main.js"></script>
+</body>

@@ -16,7 +16,6 @@ div {
 
 h1, h2, h3, h4, h5 {
   font-family: "Francois One", sans-serif;
-  margin: 0;
 }
 
 .u-text-center, .c-checkout input:not([type=submit]), .c-checkout select, .c-checkout label {
@@ -76,6 +75,10 @@ h1, h2, h3, h4, h5 {
 .c-product--brand {
   color: #616161;
   text-transform: uppercase;
+  margin: 0.2em !important;
+}
+.c-product--name {
+  margin: 0.2em !important;
 }
 .c-product-image {
   width: 100%;
@@ -114,17 +117,26 @@ h1, h2, h3, h4, h5 {
 }
 
 .c-checkout {
-  display: none;
+  position: absolute;
   font-family: "Francois One", sans-serif;
   background: #212121;
   color: white;
   border-radius: 10px;
   box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(0%);
+  overflow: hidden;
+  opacity: 0;
   z-index: -1;
+  bottom: 0;
 }
 @media only screen and (min-width : 992px) {
   .c-checkout {
+    opacity: 1;
+    right: 0;
+    height: auto;
+    bottom: auto;
     border-radius: 0 10px 10px 0;
+    transform: translateY(0);
   }
 }
 .c-checkout--wrapper {
@@ -177,42 +189,26 @@ h1, h2, h3, h4, h5 {
 }
 
 .active {
-  display: block;
-  animation: fade-in 0.8s;
+  transform: translateY(100%);
+  opacity: 1;
+  transition: all ease-in-out 800ms;
 }
 @media only screen and (min-width : 992px) {
   .active {
-    animation: fade-in-desktop 0.8s;
+    transform: translateX(100%);
+    animation: none;
   }
 }
 
 .deactive {
-  animation: fade-in reverse 0.8s;
+  transform: translateY(0%);
+  transition: all ease-in-out 800ms;
+  z-index: -1;
 }
 @media only screen and (min-width : 992px) {
   .deactive {
-    animation: fade-in-desktop reverse 0.8s;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fade-in-desktop {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
+    transform: translateX(0%);
+    animation: none;
   }
 }
 

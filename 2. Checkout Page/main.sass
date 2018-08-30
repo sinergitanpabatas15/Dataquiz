@@ -29,7 +29,6 @@ div
 
 h1,h2,h3,h4,h5
   font-family: 'Francois One', sans-serif
-  margin: 0
 
 .u-text-center
   text-align: center
@@ -76,6 +75,9 @@ h1,h2,h3,h4,h5
   &--brand
     color: $grey
     text-transform: uppercase
+    margin: 0.2em !important
+  &--name
+    margin: 0.2em !important
   &-image
     width: 100%
     max-width: 450px
@@ -106,15 +108,26 @@ h1,h2,h3,h4,h5
       background: $cta-btn-light
     
 .c-checkout
-  display: none
+  position: absolute
   font-family: 'Francois One', sans-serif
   background: $darkgrey
   color: white
   border-radius: 10px
   box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.2)
+  transform: translateY(0%)
+  overflow: hidden
+  opacity: 0
   z-index: -1
+  // opacity: 0
+  bottom: 0
+  // height: 0
   @media #{$laptop}
+    opacity: 1
+    right: 0
+    height: auto
+    bottom: auto
     border-radius: 0 10px 10px 0
+    transform: translateY(0)
   &--wrapper
     padding: 0 1em
     padding-bottom: 1em
@@ -155,29 +168,24 @@ h1,h2,h3,h4,h5
       background: linear-gradient(45deg, rgba(2, 136, 209,1.0), rgba(25, 118, 210,1.0))
  
 .active
-  display: block
-  animation: fade-in 0.8s
-  @media #{$laptop}
-    animation: fade-in-desktop 0.8s
+    transform: translateY(100%)
+    opacity: 1
+    transition: all ease-in-out 800ms
+    // animation: fade-in ease-in 500ms
+    @media #{$laptop}
+      transform: translateX(100%)
+      animation: none
   
 .deactive
-  animation: fade-in reverse 0.8s
-  @media #{$laptop}
-    animation: fade-in-desktop reverse 0.8s
+    transform: translateY(0%)
+    transition: all ease-in-out 800ms
+    z-index: -1
+    @media #{$laptop}
+      transform: translateX(0%)
+      animation: none
 
-@keyframes fade-in
-  0%
-    transform: translateY(-100%)
-    opacity: 0
-  100%
-    transform: translateY(0)
-    opacity: 1
-  
-
-@keyframes fade-in-desktop
-  0%
-    transform: translateX(-100%)
-    opacity: 0
-  100%
-    transform: translateX(0)
-    opacity: 1
+// @keyframes fade-in
+//   0%
+//     opacity: 0
+//   100%
+//     opacity: 1
