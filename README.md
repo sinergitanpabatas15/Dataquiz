@@ -10,5 +10,7 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 
 [4. Score Meter](https://snowleo208.github.io/100-Days-of-Code/4.%20Score%20Meter/index.html)
 
+[5. Flex Table](https://snowleo208.github.io/100-Days-of-Code/5.%20Flex%20Table/index.html)
+
 ## Log
 [View my log here](https://github.com/snowleo208/100-Days-of-Code/blob/master/log.md)

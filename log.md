@@ -45,3 +45,17 @@
 Also created my first combinations of svg animation and div!
 
 **Link to work:** [Basic score meter](https://codepen.io/snowleo208/pen/NLbjOw)
+
+### Day 7: 31 Aug 2018
+
+**Today's Progress**: Finished the checkout page! Stucked in the animation for long time and finally fixed!
+
+**Link to work:** [Checkout Page](https://codepen.io/snowleo208/pen/dqGRxx)
+
+### Day 8: 3 Sep 2018
+
+**Today's Progress**: Using flexbox layout to create table for the first time! 
+
+**Thoughts:** Stucked in width and nested row issues for long time, but now fixed. It took long time for me to create mobile and tablet version, hope its design is not so weird.
+
+**Link to work:** [Flex Table Page](https://codepen.io/snowleo208/pen/NLpZjv)
