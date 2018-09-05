@@ -12,5 +12,11 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 
 [5. Flex Table](https://snowleo208.github.io/100-Days-of-Code/5.%20Flex%20Table/index.html)
 
+[Grid Layout Version](https://snowleo208.github.io/100-Days-of-Code/5.%20Flex%20Table/grid/index.html) / [Semantic Version](https://snowleo208.github.io/100-Days-of-Code/5.%20Flex%20Table/semantic/index.html)
+
+[Article: How to create responsive table in modern way](https://medium.com/@snowleo208/how-to-create-responsive-table-d1662cb62075)
+
+
+
 ## Log
 [View my log here](https://github.com/snowleo208/100-Days-of-Code/blob/master/log.md)

@@ -59,3 +59,13 @@ Also created my first combinations of svg animation and div!
 **Thoughts:** Stucked in width and nested row issues for long time, but now fixed. It took long time for me to create mobile and tablet version, hope its design is not so weird.
 
 **Link to work:** [Flex Table Page](https://codepen.io/snowleo208/pen/NLpZjv)
+
+### Day 8: 4 Sep 2018
+
+**Today's Progress**: Create css grid and semantic version of table, also create my first article of how to create them!
+
+**Thoughts:** Stucked at nested table css grid version for long, finally find a solution of grid-column-start and grid-column-end. Also, it is hard to create an article of detailed tutorials... Just because of my laziness. It is difficult to explain or write out what is in my mind.
+
+**Link to work:** [Flex Table / Grid Version](https://codepen.io/snowleo208/pen/zJwZqY)
+**Link to work:** [Flex Table / Semantic Version](https://codepen.io/snowleo208/pen/QVvZKW)
+**Link to work:** [Article: How to create responsive table in modern way](https://medium.com/@snowleo208/how-to-create-responsive-table-d1662cb62075)
