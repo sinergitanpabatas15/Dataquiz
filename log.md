@@ -69,3 +69,11 @@ Also created my first combinations of svg animation and div!
 **Link to work:** [Flex Table / Grid Version](https://codepen.io/snowleo208/pen/zJwZqY)
 **Link to work:** [Flex Table / Semantic Version](https://codepen.io/snowleo208/pen/QVvZKW)
 **Link to work:** [Article: How to create responsive table in modern way](https://medium.com/@snowleo208/how-to-create-responsive-table-d1662cb62075)
+
+### Day 9: 6 Sep 2018
+
+**Today's Progress**: Create my first codepen challenge! This week is status page and I chose 404 page. Finished!
+
+**Thoughts:** The time of animation needs more efforts to tune and adjust between different screen sizes. Also, it is hard to think of the design of this page! When I look at others' designs, I felt my page is not very good :(
+
+**Link to work:** [404 Page](https://codepen.io/snowleo208/full/ZMXOpB/)

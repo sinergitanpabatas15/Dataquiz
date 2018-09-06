@@ -1,0 +1,147 @@
+//text color
+$text: rgb(66, 66, 66)
+$plane: #424242
+$header: #2196F3
+$light-color: #1E88E5
+$link: #2196F3
+$button: #66BB6A
+
+//mobile query based on bootstrap
+$phone: "only screen and (min-width : 576px)"
+$tablet: "only screen and (min-width : 768px)"
+$laptop: "only screen and (min-width : 992px)"
+$desktop: "only screen and (min-width : 1200px)"
+
+body
+  font-family: 'Lato', sans-serif
+  color: $text
+  text-align: center
+  width: 100%
+  height: 100%
+  line-height: 1.48
+  overflow: hidden
+  
+div
+  box-sizing: border-box
+
+h1,h2,h3
+  font-family: 'Quicksand', sans-serif
+
+a
+  text-decoration: none
+  color: $link
+  &:hover
+    text-decoration: underline
+  
+.c-container
+  position: relative
+  width: 100%
+  height: 100vh
+  display: flex
+  flex-flow: column wrap
+  justify-content: center
+  align-items: center
+  background: #F5F5F5
+  padding: 0 1em
+  overflow: hidden
+  
+
+.status-header
+  font-size: 3.5em
+  text-align: center
+  color: $header
+  animation: fade-in 1.7s ease-in
+  @media #{$laptop}
+    font-size: 4.5em
+  
+.status-message
+  font-size: 0.9em
+  margin-bottom: 3em
+  animation: fade-in 2s ease-in
+
+.btn
+  background: $button
+  color: white
+  border: 0
+  border-radius: 20px
+  padding: 0.5em 3em
+  box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.3)
+  opacity: 1
+  animation: fade-in 2.2s ease-in
+  &:hover
+    cursor: pointer
+    opacity: 0.9
+    transition: 400ms
+  &:active
+    transform: translateY(1px)
+
+.plane
+  position: absolute
+  top: 40%
+  left: -20%
+  animation: plane 0.7s linear
+  transform: translateX(150vw)
+  opacity: 0
+  @media #{$laptop}
+    top: 32%
+    animation: plane 1.38s linear
+  svg
+    width: 100%
+    height: 100%
+    max-width: 90px
+    fill: $plane
+    transform: rotate(40deg)
+    
+.background
+  position: absolute
+  top: 40%
+  left: -30%
+  animation: background 2.5s ease-in
+  fill: $header
+  z-index: -1
+  @media #{$laptop}
+    top: 32%
+    animation: background 2.2s ease-in
+    
+footer
+  position: absolute
+  background: linear-gradient(to left, $header, $header 50%, $light-color 75%, $light-color 75%)
+  bottom: 0
+  left: 0
+  width: 100%
+  min-height: 10vh
+  overflow: hidden
+  animation: fade-in 2.8s linear
+
+@keyframes plane
+  0%
+    transform: translateX(-20%)
+    opacity: 1
+  70%
+    opacity: 1
+  100%
+    transform: translateX(150vw)
+    opacity: 0
+
+@keyframes background
+  0%
+    z-index: -1
+    transform: scale(0) translateX(-20%)
+  1%
+    z-index: 1
+  10%
+    opacity: 0.8
+  80%
+    transform: scale(100) translateX(0%)
+  84%
+    opacity: 0
+  100%
+    z-index: -1
+  
+@keyframes fade-in
+  0%
+    opacity: 0
+  50%
+    opacity: 0
+  100%
+    opacity: 1

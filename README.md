@@ -16,6 +16,7 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 
 [Article: How to create responsive table in modern way](https://medium.com/@snowleo208/how-to-create-responsive-table-d1662cb62075)
 
+[6. 404 page](https://snowleo208.github.io/100-Days-of-Code/4.%20404%20Page/index.html)
 
 
 ## Log
