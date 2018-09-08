@@ -77,3 +77,12 @@ Also created my first combinations of svg animation and div!
 **Thoughts:** The time of animation needs more efforts to tune and adjust between different screen sizes. Also, it is hard to think of the design of this page! When I look at others' designs, I felt my page is not very good :(
 
 **Link to work:** [404 Page](https://codepen.io/snowleo208/full/ZMXOpB/)
+
+### Day 10: 7 Sep 2018
+
+**Today's Progress**: Try to create HTML audio play and investigating design and details.
+
+### Day 11: 8 Sep 2018
+
+**Today's Progress**: Create audio play with basic play functions and interface. Try to add forward and backward function later.
+

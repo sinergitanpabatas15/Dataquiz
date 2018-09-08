@@ -1,0 +1,60 @@
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<head>
+    <title>Music Player</title>
+</head>
+
+<!-- Music from Free Music Archive -->
+<!-- http://freemusicarchive.org/music/Marcel_Pequel/From_One_To_Nine/ -->
+
+<body>
+    <div class="c-containter">
+        <div class="music-container">
+            <section class="album-cover">
+                <img src="http://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg" alt="From One To Nine by Marcel Pequel">
+            </section>
+            <section class="music-player">
+                <h1 class="music-player__title">Six</h1>
+                <h2 class="music-player__author">Marcel Pequel</h2>
+                <div class="music-time">
+                    <p class="music-time__current">00:00</p>
+                    <p class="music-time__last">01:32</p>
+                </div>
+                <div class="music-bar">
+                    <svg width="100%" height="5" x="0" y="0">
+                        <rect width="10%" height="100%" x="0" y="0" id="length" />
+                    </svg> 
+                </div>
+                <div class="music-order">
+                    <div class="music-order__loop" id="loop">
+                        <img src="./img/loop.svg" alt="Loop music">
+                    </div>
+                    <div class="music-order__shuffle" id="shuffle">
+                        <img src="./img/shuffle.svg" alt="Shuffle music">
+                    </div>
+                </div>
+                <div class="music-control">
+                    <div class="music-control__backward" id="backward">
+                        <img src="./img/backward.svg" alt="Backward">
+                    </div>
+                    <div class="music-control__play" id="play">
+                        <img src="./img/play.svg" alt="Play">
+                    </div>
+                    <div class="music-control__forward" id="forward">
+                        <img src="./img/forward.svg" alt="Forward">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    
+    <audio id="music1" src="http://res.cloudinary.com/dkzj4hdmd/video/upload/v1536400484/Marcel_Pequel_-_06_-_Six_o1nplu.mp3"></audio>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Mukta" rel="stylesheet"> 
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+</body>
+</html>
