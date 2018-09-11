@@ -82,7 +82,26 @@ Also created my first combinations of svg animation and div!
 
 **Today's Progress**: Try to create HTML audio play and investigating design and details.
 
-### Day 11: 8 Sep 2018
+### Day 11: 9 Sep 2018
 
 **Today's Progress**: Create audio play with basic play functions and interface. Try to add forward and backward function later.
+
+
+### Day 12: 10 Sep 2018
+
+**Today's Progress**: Today is family day, just watched first lesson of Java beginner course in coursera.
+
+**Thoughts:** I am trying to learn java because I want to improve and clarify my OOP concept, I thought strong type language has some advantages over weak typed language like javascript, and much more design patterns are available. Hopefully, I can improve my knowledges on these issues.
+
+### Day 13: 11 Sep 2018
+
+**Today's Progress**: Create my first smooth scroll using native method and requestAnimationFrame method.
+
+**Thoughts:** I struggle a lot when try to implement requestAnimationFrame method, but thank for the tutorial online, I guess I know more about it. Also, I hope to write down my knowledge on Medium.
+
+**Link to work:** 
+
+[Native method](https://codepen.io/snowleo208/pen/vzdoZz)
+
+[requestAnimationFrame method](https://codepen.io/snowleo208/pen/EeQdBB)
 

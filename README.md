@@ -18,6 +18,12 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 
 [6. 404 page](https://snowleo208.github.io/100-Days-of-Code/6.%20404%20Page/index.html)
 
+Smooth Scroll
+
+[requestAnimationFrame version](https://snowleo208.github.io/100-Days-of-Code/8.%20Smooth%20Scroll/animation/index.html)
+
+[scrollIntoView version](https://snowleo208.github.io/100-Days-of-Code/8.%20Smooth%20Scroll/native/index.html)
+
 
 ## Log
 [View my log here](https://github.com/snowleo208/100-Days-of-Code/blob/master/log.md)
