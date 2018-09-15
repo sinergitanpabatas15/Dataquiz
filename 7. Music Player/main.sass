@@ -38,14 +38,34 @@ div > img
   padding: 0 1em
 
 .music-container
+  position: relative
   display: flex
   box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.3)
 
 .album-cover
+  flex: 1 0 30%
   img
     width: 100%
     height: 100%
 
+.arrow
+  position: absolute
+  top: calc(50% - 2.5em)
+  background: rgba(255,255,255,0.3)
+  border: 0
+  width: 5em
+  height: 5em
+  cursor: pointer
+  &:hover
+    background: rgba(255,255,255,0.5)
+  img
+    display: block
+    width: 20px
+    margin: 0 auto
+  &.left
+    left: -5em
+  &.right
+    right: -5em
 .music-player
   display: flex
   flex-flow: column wrap
@@ -53,7 +73,7 @@ div > img
   background: white
   padding: 1em
   text-align: center
-  width: 100%
+  width: 500px
   max-width: 500px
   &__title
     margin: 0 0 0.1em 0
@@ -62,8 +82,13 @@ div > img
 
 .music-bar 
   background: $music-bar-bg
-  fill: $music-bar
   stroke-width: 1
+  height: 5px
+  #length
+    width: 0%
+    background: $music-bar
+    height: 100%
+    transition: width linear 400ms
 
 .music-time
   display: flex

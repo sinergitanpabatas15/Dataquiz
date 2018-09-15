@@ -111,7 +111,7 @@ Also created my first combinations of svg animation and div!
 
 **Thoughts:** It is hard to create a website with accessibility, if you need to create custom dropdown or select, you will need more efforts to recreate the accessibility part. But designers love custom fancy dropdowns and selects!
 
-### Day 14: 14 Sep 2018
+### Day 15: 14 Sep 2018
 
 **Today's Progress**: Keep creating the music player with time viewer and control.
 
