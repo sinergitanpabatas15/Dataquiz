@@ -1,15 +1,15 @@
 (function IIFE() {
     
     const list = [
-        {id: 1, url: 'http://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992860/Marcel_Pequel_-_01_-_One_rwev7k.mp3', author: 'Marcel Pequel', title: 'One', cover: 'http://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
-        {id: 2, url: 'http://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992860/Marcel_Pequel_-_02_-_Two_yd6dv2.mp3', author: 'Marcel Pequel', title: 'Two', cover: 'http://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
-        {id: 3, url: 'http://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992858/Marcel_Pequel_-_03_-_Three_y2k4q5.mp3', author: 'Marcel Pequel', title: 'Three', cover: 'http://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
-        {id: 4, url: 'http://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992859/Marcel_Pequel_-_04_-_Four_ezfkr1.mp3', author: 'Marcel Pequel', title: 'Four', cover: 'http://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
-        {id: 5, url: 'http://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992858/Marcel_Pequel_-_05_-_Five_pd3ql5.mp3', author: 'Marcel Pequel', title: 'Five', cover: 'http://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
-        {id: 6, url: 'http://res.cloudinary.com/dkzj4hdmd/video/upload/v1536400484/Marcel_Pequel_-_06_-_Six_o1nplu.mp3', author: 'Marcel Pequel', title: 'Six', cover: 'http://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
-        {id: 7, url: 'http://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992858/Marcel_Pequel_-_07_-_Seven_mv0w1p.mp3', author: 'Marcel Pequel', title: 'Seven', cover: 'http://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
-        {id: 8, url: 'http://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992858/Marcel_Pequel_-_08_-_Eight_sjcbbx.mp3', author: 'Marcel Pequel', title: 'Eight', cover: 'http://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
-        {id: 9, url: 'http://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992857/Marcel_Pequel_-_09_-_Nine_y2zrx7.mp3', author: 'Marcel Pequel', title: 'Nine', cover: 'http://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
+        {id: 1, url: 'https://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992860/Marcel_Pequel_-_01_-_One_rwev7k.mp3', author: 'Marcel Pequel', title: 'One', cover: 'https://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
+        {id: 2, url: 'https://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992860/Marcel_Pequel_-_02_-_Two_yd6dv2.mp3', author: 'Marcel Pequel', title: 'Two', cover: 'https://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
+        {id: 3, url: 'https://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992858/Marcel_Pequel_-_03_-_Three_y2k4q5.mp3', author: 'Marcel Pequel', title: 'Three', cover: 'https://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
+        {id: 4, url: 'https://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992859/Marcel_Pequel_-_04_-_Four_ezfkr1.mp3', author: 'Marcel Pequel', title: 'Four', cover: 'https://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
+        {id: 5, url: 'https://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992858/Marcel_Pequel_-_05_-_Five_pd3ql5.mp3', author: 'Marcel Pequel', title: 'Five', cover: 'https://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
+        {id: 6, url: 'https://res.cloudinary.com/dkzj4hdmd/video/upload/v1536400484/Marcel_Pequel_-_06_-_Six_o1nplu.mp3', author: 'Marcel Pequel', title: 'Six', cover: 'https://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
+        {id: 7, url: 'https://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992858/Marcel_Pequel_-_07_-_Seven_mv0w1p.mp3', author: 'Marcel Pequel', title: 'Seven', cover: 'https://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
+        {id: 8, url: 'https://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992858/Marcel_Pequel_-_08_-_Eight_sjcbbx.mp3', author: 'Marcel Pequel', title: 'Eight', cover: 'https://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
+        {id: 9, url: 'https://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992857/Marcel_Pequel_-_09_-_Nine_y2zrx7.mp3', author: 'Marcel Pequel', title: 'Nine', cover: 'https://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
     ]
     
     let currentId = 0;

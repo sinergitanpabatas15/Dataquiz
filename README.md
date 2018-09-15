@@ -24,6 +24,7 @@ Smooth Scroll
 
 [scrollIntoView version](https://snowleo208.github.io/100-Days-of-Code/8.%20Smooth%20Scroll/native/index.html)
 
+[7. Music Player](https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/index.html)
 
 ## Log
 [View my log here](https://github.com/snowleo208/100-Days-of-Code/blob/master/log.md)
