@@ -121,4 +121,4 @@ Also created my first combinations of svg animation and div!
 
 **Thoughts:** Fortunately I can finish this before the Typhon Mankart comes! :)
 
-**Link to work:** [Music Player](https://codepen.io/snowleo208/pen/vzdoZz)
+**Link to work:** [Music Player](https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/index.html)
