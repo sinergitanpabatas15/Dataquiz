@@ -15,13 +15,23 @@ img {
   height: 100%;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
 body {
   font-family: "Mukta", sans-serif;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
   background: linear-gradient(-45deg, #FFCDD2 50%, #B2EBF2 50%);
+}
+
+div,
+section {
+  box-sizing: border-box;
 }
 
 .c-containter {
@@ -29,8 +39,8 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 0 1em;
 }
 
@@ -38,6 +48,7 @@ body {
   position: relative;
   display: flex;
   box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.3);
+  max-height: 290px;
 }
 
 .album-cover {
@@ -74,7 +85,7 @@ body {
 
 .music-player {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   justify-content: center;
   background: white;
   padding: 1em;
@@ -93,6 +104,7 @@ body {
   background: #efefef;
   stroke-width: 1;
   height: 5px;
+  width: 100%;
 }
 .music-bar #length {
   width: 0%;
@@ -130,6 +142,8 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
+  height: 2em;
 }
 .music-control__play {
   width: 3em;
@@ -138,13 +152,45 @@ body {
 }
 
 @media all and (max-width: 532px) {
-  .c-container,
-.music-container {
+  .c-containter {
+    display: block;
+  }
+
+  .music-container {
     flex-flow: column wrap;
+  }
+
+  .music-player {
+    width: 100%;
+    max-width: 100%;
+  }
+  .music-player__title {
+    font-size: 1.5em;
+  }
+  .music-player__author {
+    font-size: 1em;
   }
 
   .music-container {
     margin: 1em;
+  }
+
+  .album-cover {
+    position: relative;
+    flex: 1 1 100%;
+  }
+
+  .arrow {
+    position: absolute;
+    top: calc(50% - 1.5em);
+    width: 3em;
+    height: 3em;
+  }
+  .arrow.left {
+    left: 0;
+  }
+  .arrow.right {
+    right: 0;
   }
 
   .music-control__play {

@@ -16,10 +16,14 @@ img
   width: 100%
   height: 100%
 
+p 
+  margin-top: 0
+  margin-bottom: 0.5em
+
 body
   font-family: 'Mukta', sans-serif
-  width: 100%
-  height: 100%
+  width: 100vw
+  height: 100vh
   margin: 0
   padding: 0
   background: linear-gradient(-45deg, $bg-1 50%, $bg-2 50%)
@@ -28,19 +32,24 @@ body
 div > img
   @extend %player-action
 
+div,
+section
+  box-sizing: border-box
+
 .c-containter
   display: flex
   flex-flow: row wrap
   justify-content: center
   align-items: center
-  width: 100vw
-  height: 100vh
+  width: 100%
+  height: 100%
   padding: 0 1em
 
 .music-container
   position: relative
   display: flex
   box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.3)
+  max-height: 290px
 
 .album-cover
   flex: 1 0 30%
@@ -66,9 +75,10 @@ div > img
     left: -5em
   &.right
     right: -5em
+
 .music-player
   display: flex
-  flex-flow: column wrap
+  flex-direction: column
   justify-content: center
   background: white
   padding: 1em
@@ -84,6 +94,7 @@ div > img
   background: $music-bar-bg
   stroke-width: 1
   height: 5px
+  width: 100%
   #length
     width: 0%
     background: $music-bar
@@ -114,6 +125,8 @@ div > img
   display: flex
   flex-flow: row wrap
   justify-content: center
+  align-items: center
+  height: 2em
   &__play
     width: 3em
     height: 3em
@@ -123,14 +136,36 @@ div > img
 @media all and (min-width: 533px) and (max-width: 767px)
 
 @media all and (max-width: 532px)
-  .c-container,
+  .c-containter
+    display: block
+
   .music-container
     flex-flow: column wrap
+
+  .music-player
+    width: 100%
+    max-width: 100%
+    &__title
+      font-size: 1.5em
+    &__author
+      font-size: 1em
 
   .music-container
     margin: 1em
 
   .album-cover
+    position: relative
+    flex: 1 1 100%
+
+  .arrow
+    position: absolute
+    top: calc(50% - 1.5em)
+    width: 3em
+    height: 3em
+    &.left
+      left: 0
+    &.right
+      right: 0
 
   .music-control
     &__play

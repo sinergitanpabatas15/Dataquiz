@@ -21,14 +21,14 @@
     
     function play(e) {
         if(!isPlaying) {
-            console.log('play');
+            // console.log('play');
             e.target.src = './img/pause.svg';
             e.target.alt = 'Pause';
             isPlaying = true;
             document.getElementById(currentAudio).play();
             showTime();
         } else {
-            console.log('pause');
+            // console.log('pause');
             e.target.src = './img/play.svg';
             e.target.alt = 'Play';
             document.getElementById(currentAudio).pause();
@@ -39,6 +39,9 @@
     
     function changeBar() {
         const audio = document.getElementById(currentAudio);
+        const percentage = (audio.currentTime / audio.duration).toFixed(3);
+        document.getElementById('length').style.transition = '';
+        // console.log(audio.currentTime);
 
         //set current time
         const minute = Math.floor(audio.currentTime / 60);
@@ -53,7 +56,6 @@
         document.querySelector('.music-time__last').innerHTML = ('0' + leftMinute).substr(-2) + ':' + ('0' + leftSecond).substr(-2);
         
         //set time bar
-        const percentage = (audio.currentTime / audio.duration).toFixed(3);
         document.getElementById('length').style.width = (percentage * 100) + '%';
     }
     
@@ -61,26 +63,7 @@
         timer = setInterval(() => changeBar(),500);
     }
     
-    function loop(e) {
-        if(!isLoop) {
-            console.log('is loop');
-            e.target.parentNode.classList.add('is-loop');
-            document.getElementById(currentAudio).loop = true; 
-            document.getElementById('length').style.transition = 'none';
-            isLoop = true;
-            document.getElementById(currentAudio).onended = (e) => stopMusic(e);
-            
-        } else {
-            console.log('not loop');
-            e.target.parentNode.classList.remove('is-loop');
-            document.getElementById(currentAudio).loop = false;
-            isLoop = false;
-            document.getElementById(currentAudio).onended = (e) => goToNextMusic(e);
-        }
-        
-    }
-    
-    function nextMusic(e, mode) {
+    function nextMusic(mode) {
         document.querySelector('.play').src = './img/play.svg';
         document.querySelector('.play').alt = 'Play';
         document.getElementById(currentAudio).pause();
@@ -119,9 +102,9 @@
         console.log(audio.currentTime);
     }
     
-    function stopMusic(e) {
-        e.target.src = './img/play.svg';
-        e.target.alt = 'Play';
+    function stopMusic() {
+        document.querySelector('.play').src = './img/play.svg';
+        document.querySelector('.play').alt = 'Play';
         isPlaying = false;
     }
     
@@ -136,14 +119,33 @@
         document.getElementById(currentAudio).play();
     }
     
+    function loop(e) {
+        if(!isLoop) {
+            isLoop = true;
+            // console.log('is loop');
+            e.target.parentNode.classList.add('is-loop');
+            document.getElementById(currentAudio).loop = true; 
+            document.getElementById(currentAudio).onended = (e) => goToNextMusic();
+        } else {
+            // console.log('not loop');
+            isLoop = false;
+            e.target.parentNode.classList.remove('is-loop');
+            document.getElementById(currentAudio).loop = false;
+            document.getElementById(currentAudio).onended = (e) => stopMusic();
+        }
+        
+    }
+    
     function init() {
         //reset music duration and setup audio
-        const audio = new Audio();
+        const audio = document.getElementById(currentAudio) === null? new Audio() : document.getElementById(currentAudio);
         audio.src = list[currentId].url;
         audio.id = currentAudio;
-        document.body.appendChild(audio);
+        document.getElementById(currentAudio) === null? document.body.appendChild(audio) : '';
+
         document.getElementById('length').style.transition = 'none';
         document.getElementById('length').style.width = '0%';
+        document.getElementById(currentAudio).currentTime = 0;
         
         document.querySelector('.music-player__title').innerHTML = list[currentId].title;
         document.querySelector('.music-player__author').innerHTML = list[currentId].author;
@@ -169,8 +171,8 @@
     document.getElementById('forward').addEventListener('click', forward);
     document.getElementById('backward').addEventListener('click', backward);
     
-    document.getElementById('prev').addEventListener('click', (e) => nextMusic(e, 'prev'));
-    document.getElementById('next').addEventListener('click', (e) => nextMusic(e, 'next'));
+    document.getElementById('prev').addEventListener('click', (e) => nextMusic('prev'));
+    document.getElementById('next').addEventListener('click', (e) => nextMusic('next'));
     init();
     
 })();
