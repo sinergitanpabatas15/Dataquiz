@@ -115,3 +115,10 @@ Also created my first combinations of svg animation and div!
 
 **Today's Progress**: Keep creating the music player with time viewer and control.
 
+### Day 16: 15 Sep 2018
+
+**Today's Progress**: Keep creating the music player with time viewer and control. Added function of shuffle, loop, backward and forward, also view prev/next song function.
+
+**Thoughts:** Fortunately I can finish this before the Typhon Mankart comes! :)
+
+**Link to work:** [Music Player](https://codepen.io/snowleo208/pen/vzdoZz)
