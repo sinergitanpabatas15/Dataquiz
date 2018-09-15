@@ -12,7 +12,7 @@
         {id: 9, url: 'http://res.cloudinary.com/dkzj4hdmd/video/upload/v1536992857/Marcel_Pequel_-_09_-_Nine_y2zrx7.mp3', author: 'Marcel Pequel', title: 'Nine', cover: 'http://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg'},
     ]
     
-    let currentId = 8;
+    let currentId = 0;
     let isPlaying = false;
     let isLoop = true;
     let isShuffle = false;

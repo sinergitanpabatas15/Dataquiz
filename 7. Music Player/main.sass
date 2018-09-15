@@ -22,10 +22,12 @@ p
 
 body
   font-family: 'Mukta', sans-serif
-  width: 100vw
-  height: 100vh
+  width: 100%
+  height: 100%
   margin: 0
   padding: 0
+  min-width: 100vw
+  min-height: 100vh
   background: linear-gradient(-45deg, $bg-1 50%, $bg-2 50%)
 
 //for all buttons
@@ -38,12 +40,12 @@ section
 
 .c-containter
   display: flex
-  flex-flow: row wrap
+  flex-flow: column wrap
   justify-content: center
   align-items: center
   width: 100%
   height: 100%
-  padding: 0 1em
+  padding: 1em
 
 .music-container
   position: relative
@@ -78,7 +80,7 @@ section
 
 .music-player
   display: flex
-  flex-direction: column
+  flex-flow: column wrap
   justify-content: center
   background: white
   padding: 1em
@@ -131,16 +133,28 @@ section
     width: 3em
     height: 3em
     margin: 0 1em
+  &__backward,
+  &__forward
+    width: 1.5em
+    height: 1.5em
 
+.disclaimer
+  font-size: 0.9em
+  margin-top: 1em
+  a 
+    color: $music-bar
 
-@media all and (min-width: 533px) and (max-width: 767px)
-
-@media all and (max-width: 532px)
+@media all and (max-width: 768px)
   .c-containter
     display: block
+    overflow: auto
 
   .music-container
     flex-flow: column wrap
+    max-height: inherit
+    max-width: 270px
+    margin: 0 auto
+    overflow: auto
 
   .music-player
     width: 100%
@@ -150,12 +164,11 @@ section
     &__author
       font-size: 1em
 
-  .music-container
-    margin: 1em
-
   .album-cover
     position: relative
     flex: 1 1 100%
+    max-width: 270px
+    max-height: 270px
 
   .arrow
     position: absolute
