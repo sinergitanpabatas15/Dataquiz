@@ -18,6 +18,22 @@
     let isShuffle = false;
     let currentAudio = 'music1';
     let timer = null;
+
+    const currentTimeIndicator = document.querySelector('.music-time__current');
+    const leftTimeIndicator = document.querySelector('.music-time__last');
+    const progressBar = document.getElementById('length');
+    const playBtn = document.querySelector('.play');
+    const cover = document.querySelector('.cover');
+    const title = document.querySelector('.music-player__title');
+    const author = document.querySelector('.music-player__author');
+
+    const loopBtn = document.getElementById('loop');
+    const shuffleBtn = document.getElementById('shuffle');
+    const forwardBtn = document.getElementById('forward');
+    const backwardBtn = document.getElementById('backward');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+    const progressDiv = document.getElementById('progress');
     
     function play(e) {
         if(!isPlaying) {
@@ -40,23 +56,23 @@
     function changeBar() {
         const audio = document.getElementById(currentAudio);
         const percentage = (audio.currentTime / audio.duration).toFixed(3);
-        document.getElementById('length').style.transition = '';
+        progressBar.style.transition = '';
         // console.log(audio.currentTime);
 
         //set current time
         const minute = Math.floor(audio.currentTime / 60);
         const second = Math.floor(audio.currentTime % 60);
         const leftTime = audio.duration - audio.currentTime;
-        document.querySelector('.music-time__current').innerHTML = ('0' + minute).substr(-2) + ':' + ('0' + second).substr(-2);
+        currentTimeIndicator.innerHTML = ('0' + minute).substr(-2) + ':' + ('0' + second).substr(-2);
         
         //set left time
         const leftMinute = Math.floor(leftTime / 60);
         const leftSecond = Math.floor(leftTime % 60);
         
-        document.querySelector('.music-time__last').innerHTML = ('0' + leftMinute).substr(-2) + ':' + ('0' + leftSecond).substr(-2);
+        leftTimeIndicator.innerHTML = ('0' + leftMinute).substr(-2) + ':' + ('0' + leftSecond).substr(-2);
         
         //set time bar
-        document.getElementById('length').style.width = (percentage * 100) + '%';
+        progressBar.style.width = (percentage * 100) + '%';
     }
     
     function showTime() {
@@ -64,8 +80,8 @@
     }
     
     function nextMusic(mode) {
-        document.querySelector('.play').src = './img/play.svg';
-        document.querySelector('.play').alt = 'Play';
+        playBtn.src = './img/play.svg';
+        playBtn.alt = 'Play';
         document.getElementById(currentAudio).pause();
         isPlaying = false;
         clearInterval(timer);
@@ -91,20 +107,18 @@
     function backward () {
         const audio = document.getElementById(currentAudio);
         audio.currentTime -= 5;
-        if(!isPlaying){ changeBar(); }
-        console.log(audio.currentTime);
+        if(!isPlaying) { changeBar(); }
     }
     
     function forward () {
         const audio = document.getElementById(currentAudio);
         audio.currentTime += 5;
-        if(!isPlaying){ changeBar(); }
-        console.log(audio.currentTime);
+        if(!isPlaying) { changeBar(); }
     }
     
     function stopMusic() {
-        document.querySelector('.play').src = './img/play.svg';
-        document.querySelector('.play').alt = 'Play';
+        playBtn.src = './img/play.svg';
+        playBtn.alt = 'Play';
         isPlaying = false;
     }
     
@@ -120,20 +134,32 @@
     }
     
     function loop(e) {
+        const audio = document.getElementById(currentAudio);
+
         if(!isLoop) {
             isLoop = true;
             // console.log('is loop');
             e.target.parentNode.classList.add('is-loop');
-            document.getElementById(currentAudio).loop = true; 
-            document.getElementById(currentAudio).onended = (e) => goToNextMusic();
+            audio.loop = true; 
+            audio.onended = (e) => goToNextMusic();
         } else {
             // console.log('not loop');
             isLoop = false;
             e.target.parentNode.classList.remove('is-loop');
-            document.getElementById(currentAudio).loop = false;
-            document.getElementById(currentAudio).onended = (e) => stopMusic();
+            audio.loop = false;
+            audio.onended = (e) => stopMusic();
         }
         
+    }
+
+    function progress (e) {
+        const audio = document.getElementById(currentAudio);
+        if(isPlaying) {
+            const pos = (e.pageX  - this.offsetLeft) / this.offsetWidth;
+            // audio.currentTime = pos * audio.duration;
+            // changeBar();
+            console.log(e.pageX, this.offsetLeft, this.offsetWidth, this);
+        }
     }
     
     function init() {
@@ -143,36 +169,38 @@
         audio.id = currentAudio;
         document.getElementById(currentAudio) === null? document.body.appendChild(audio) : '';
 
-        document.getElementById('length').style.transition = 'none';
-        document.getElementById('length').style.width = '0%';
+        progressBar.style.transition = 'none';
+        progressBar.style.width = '0%';
         document.getElementById(currentAudio).currentTime = 0;
         
-        document.querySelector('.music-player__title').innerHTML = list[currentId].title;
-        document.querySelector('.music-player__author').innerHTML = list[currentId].author;
-        document.querySelector('.cover').src = list[currentId].cover;
+        title.innerHTML = list[currentId].title;
+        author.innerHTML = list[currentId].author;
+        cover.src = list[currentId].cover;
         
         //set current time
         audio.addEventListener('loadedmetadata', function() {
             const leftMinute = Math.floor(audio.duration / 60);
             const leftSecond = Math.floor(audio.duration % 60);
-            document.querySelector('.music-time__current').innerHTML = '00:00';
-            document.querySelector('.music-time__last').innerHTML = ('0' + leftMinute).substr(-2) + ':' + ('0' + leftSecond).substr(-2);
-            document.getElementById('length').style.transition = '';
+            currentTimeIndicator.innerHTML = '00:00';
+            leftTimeIndicator.innerHTML = ('0' + leftMinute).substr(-2) + ':' + ('0' + leftSecond).substr(-2);
+            progressBar.style.transition = '';
         });
         
         //set loop
         document.getElementById(currentAudio).onended = (e) => goToNextMusic(e);
     }
     
-    document.getElementById('play').addEventListener('click', play);
-    document.getElementById('loop').addEventListener('click', loop);
+    playBtn.addEventListener('click', play);
+    loopBtn.addEventListener('click', loop);
     
-    document.getElementById('shuffle').addEventListener('click', shuffle);
-    document.getElementById('forward').addEventListener('click', forward);
-    document.getElementById('backward').addEventListener('click', backward);
-    
-    document.getElementById('prev').addEventListener('click', (e) => nextMusic('prev'));
-    document.getElementById('next').addEventListener('click', (e) => nextMusic('next'));
+    shuffleBtn.addEventListener('click', shuffle);
+    forwardBtn.addEventListener('click', forward);
+    backwardBtn.addEventListener('click', backward);
+
+    prevBtn.addEventListener('click', (e) => nextMusic('prev'));
+    nextBtn.addEventListener('click', (e) => nextMusic('next'));
+    progressDiv.addEventListener('click', (e) => progress(e));
+
     init();
     
 })();
