@@ -18,7 +18,7 @@
     let isShuffle = false;
     let currentAudio = 'music1';
     let timer = null;
-
+    
     const currentTimeIndicator = document.querySelector('.music-time__current');
     const leftTimeIndicator = document.querySelector('.music-time__last');
     const progressBar = document.getElementById('length');
@@ -26,7 +26,7 @@
     const cover = document.querySelector('.cover');
     const title = document.querySelector('.music-player__title');
     const author = document.querySelector('.music-player__author');
-
+    
     const loopBtn = document.getElementById('loop');
     const shuffleBtn = document.getElementById('shuffle');
     const forwardBtn = document.getElementById('forward');
@@ -58,7 +58,7 @@
         const percentage = (audio.currentTime / audio.duration).toFixed(3);
         progressBar.style.transition = '';
         // console.log(audio.currentTime);
-
+        
         //set current time
         const minute = Math.floor(audio.currentTime / 60);
         const second = Math.floor(audio.currentTime % 60);
@@ -135,7 +135,7 @@
     
     function loop(e) {
         const audio = document.getElementById(currentAudio);
-
+        
         if(!isLoop) {
             isLoop = true;
             // console.log('is loop');
@@ -151,15 +151,13 @@
         }
         
     }
-
+    
     function progress (e) {
         const audio = document.getElementById(currentAudio);
-        if(isPlaying) {
-            const pos = (e.pageX  - this.offsetLeft) / this.offsetWidth;
-            // audio.currentTime = pos * audio.duration;
-            // changeBar();
-            console.log(e.pageX, this.offsetLeft, this.offsetWidth, this);
-        }
+        //get current position and minus progress bar's x position to get current position in progress bar
+        const pos = (e.pageX - progressDiv.getClientRects()[0].x) / progressDiv.getClientRects()[0].width;
+        audio.currentTime = pos * audio.duration;
+        changeBar();
     }
     
     function init() {
@@ -168,7 +166,7 @@
         audio.src = list[currentId].url;
         audio.id = currentAudio;
         document.getElementById(currentAudio) === null? document.body.appendChild(audio) : '';
-
+        
         progressBar.style.transition = 'none';
         progressBar.style.width = '0%';
         document.getElementById(currentAudio).currentTime = 0;
@@ -196,11 +194,11 @@
     shuffleBtn.addEventListener('click', shuffle);
     forwardBtn.addEventListener('click', forward);
     backwardBtn.addEventListener('click', backward);
-
+    
     prevBtn.addEventListener('click', (e) => nextMusic('prev'));
     nextBtn.addEventListener('click', (e) => nextMusic('next'));
-    progressDiv.addEventListener('click', (e) => progress(e));
-
+    progressDiv.addEventListener('click', (e) => { progress(e); });
+    
     init();
     
 })();

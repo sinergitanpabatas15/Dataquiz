@@ -122,3 +122,9 @@ Also created my first combinations of svg animation and div!
 **Thoughts:** Fortunately I can finish this before the Typhon Mankart comes! :)
 
 **Link to work:** [Music Player](https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/index.html)
+
+### Day 17: 16 Sep 2018
+
+**Today's Progress**: Fixed broken links in social meta tag and change all control elements of audio player to variables.
+
+**Link to work:** [Music Player](https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/index.html)

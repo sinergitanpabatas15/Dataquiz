@@ -105,14 +105,17 @@ section {
 .music-bar {
   background: #efefef;
   stroke-width: 1;
-  height: 5px;
+  height: 8px;
   width: 100%;
+}
+.music-bar:hover {
+  cursor: pointer;
 }
 .music-bar #length {
   width: 0%;
   background: #2196F3;
   height: 100%;
-  transition: width linear 400ms;
+  transition: width linear 200ms;
 }
 
 .music-time {

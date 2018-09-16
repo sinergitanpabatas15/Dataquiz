@@ -95,13 +95,15 @@ section
 .music-bar 
   background: $music-bar-bg
   stroke-width: 1
-  height: 5px
+  height: 8px
   width: 100%
+  &:hover
+    cursor: pointer
   #length
     width: 0%
     background: $music-bar
     height: 100%
-    transition: width linear 400ms
+    transition: width linear 200ms
 
 .music-time
   display: flex
