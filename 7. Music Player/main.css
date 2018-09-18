@@ -17,7 +17,7 @@ img {
 
 p {
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
 }
 
 body {
@@ -133,10 +133,13 @@ section {
 .music-order__shuffle, .music-order__loop {
   width: 1.2em;
   height: 1.2em;
-  margin: 0.5em 0;
   opacity: 0.2;
+  margin: 0.3em 0;
 }
 .music-order__shuffle.is-loop, .music-order__loop.is-loop {
+  opacity: 1 !important;
+}
+.music-order__shuffle.is-loop-one, .music-order__loop.is-loop-one {
   opacity: 1 !important;
 }
 .music-order__shuffle {
@@ -163,6 +166,7 @@ section {
 .disclaimer {
   font-size: 0.9em;
   margin-top: 1em;
+  text-align: center;
 }
 .disclaimer a {
   color: #2196F3;

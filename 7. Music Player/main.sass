@@ -18,7 +18,7 @@ img
 
 p 
   margin-top: 0
-  margin-bottom: 0.5em
+  margin-bottom: 0.3em
 
 body
   font-family: 'Mukta', sans-serif
@@ -118,9 +118,11 @@ section
   &__loop
     width: 1.2em
     height: 1.2em
-    margin: 0.5em 0
     opacity: 0.2
+    margin: 0.3em 0
     &.is-loop
+      opacity: 1 !important
+    &.is-loop-one
       opacity: 1 !important
   &__shuffle
     margin-left: auto
@@ -143,6 +145,7 @@ section
 .disclaimer
   font-size: 0.9em
   margin-top: 1em
+  text-align: center
   a 
     color: $music-bar
 
