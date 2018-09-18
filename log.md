@@ -128,3 +128,13 @@ Also created my first combinations of svg animation and div!
 **Today's Progress**: Fixed broken links in social meta tag and change all control elements of audio player to variables.
 
 **Link to work:** [Music Player](https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/index.html)
+
+### Day 18: 17 Sep 2018
+
+**Today's Progress**: Trying to watch article of the best practice of node.js and trying to build my Web pack config file without using create-react-app!
+
+### Day 19: 18 Sep 2018
+
+**Today's Progress**: Add loop one function to music player! Also, started to create my next project: quiz.
+
+**Link to work:** [Music Player](https://codepen.io/snowleo208/pen/zJMqog)
