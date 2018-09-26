@@ -1,7 +1,9 @@
 # 100 Days of Code
+
 This repo is a collection of my 100 days of code journey, mostly focused on front-end web development. Project ideas mainly come from [Daily UI challenges](http://collectui.com/).
 
 ## Results:
+
 [1. Login Page](https://snowleo208.github.io/100-Days-of-Code/1.%20Login%20Page/index.html)
 
 [2. Checkout Page](https://snowleo208.github.io/100-Days-of-Code/2.%20Checkout%20Page/index.html)
@@ -18,13 +20,18 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 
 [6. 404 page](https://snowleo208.github.io/100-Days-of-Code/6.%20404%20Page/index.html)
 
-Smooth Scroll
+[7. Music Player](https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/index.html)
+
+8. Smooth Scroll
 
 [requestAnimationFrame version](https://snowleo208.github.io/100-Days-of-Code/8.%20Smooth%20Scroll/animation/index.html)
 
 [scrollIntoView version](https://snowleo208.github.io/100-Days-of-Code/8.%20Smooth%20Scroll/native/index.html)
 
-[7. Music Player](https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/index.html)
+[React SSR Template](https://github.com/snowleo208/react-ssr-template)
+
+[10. Ladder Menu](https://snowleo208.github.io/100-Days-of-Code/10.%20Ladder%20Menu/index.html)
 
 ## Log
+
 [View my log here](https://github.com/snowleo208/100-Days-of-Code/blob/master/log.md)

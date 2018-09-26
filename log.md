@@ -54,7 +54,7 @@ Also created my first combinations of svg animation and div!
 
 ### Day 8: 3 Sep 2018
 
-**Today's Progress**: Using flexbox layout to create table for the first time! 
+**Today's Progress**: Using flexbox layout to create table for the first time!
 
 **Thoughts:** Stucked in width and nested row issues for long time, but now fixed. It took long time for me to create mobile and tablet version, hope its design is not so weird.
 
@@ -86,7 +86,6 @@ Also created my first combinations of svg animation and div!
 
 **Today's Progress**: Create audio play with basic play functions and interface. Try to add forward and backward function later.
 
-
 ### Day 12: 10 Sep 2018
 
 **Today's Progress**: Today is family day, just watched first lesson of Java beginner course in coursera.
@@ -99,7 +98,7 @@ Also created my first combinations of svg animation and div!
 
 **Thoughts:** I struggle a lot when try to implement requestAnimationFrame method, but thank for the tutorial online, I guess I know more about it. Also, I hope to write down my knowledge on Medium.
 
-**Link to work:** 
+**Link to work:**
 
 [Native method](https://codepen.io/snowleo208/pen/vzdoZz)
 
@@ -138,3 +137,35 @@ Also created my first combinations of svg animation and div!
 **Today's Progress**: Add loop one function to music player! Also, started to create my next project: quiz.
 
 **Link to work:** [Music Player](https://codepen.io/snowleo208/pen/zJMqog)
+
+### Day 20: 19 Sep 2018
+
+**Today's Progress**: Try to setup React Sever Side Rendering with webpack.
+
+**Thoughts:** This is my first time to do SSR for React and I don't know there are so many steps to do! I leart about renderToString function in React-Dom and know more about webpack public path and content base. However, there is still some error in server side, and I don't know why it occurrs.
+
+### Day 21: 20 Sep 2018
+
+**Today's Progress**: Keep fighting with webpack config, mainly the public path and output path.
+
+### Day 22: 23 Sep 2018
+
+**Today's Progress**: Tried to add back eslint and prettier for this project.
+
+**Thoughts:** It is so fun to build a webpack config, just like playing with puzzles! First, I tried to use Airbnb config, but finally decided to use my own config for learning. It is amazing to see VS Code starts to highlight your syntax mistakes.
+
+### Day 23: 24 Sep 2018
+
+**Today's Progress**: Finally finished my react-ssr! Added router and redux for this project!
+
+**Thoughts:** Finally added redux and router, it is a pain to setup routes and redux for SSR. I even don't know why all the tutorials need to create one routes file and decentralized it again. Maybe this is my next mission?
+
+**Link to work:** [React SSR Template](https://github.com/snowleo208/react-ssr-template)
+
+### Day 23: 25 Sep 2018
+
+**Today's Progress**: Create mini project: Ladder menu for practicing CSS.
+
+**Thoughts:** I haven't use animation or transition for a long time, I guess this is time for me to pickup it as soon as possible.
+
+**Link to work:** [React SSR Template](https://codepen.io/snowleo208/pen/KxJMaE)

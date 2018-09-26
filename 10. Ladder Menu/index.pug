@@ -1,0 +1,31 @@
+html(lang="en")
+meta(charset="UTF-8")
+meta(name="viewport" content="width=device-width, initial-scale=1.0")
+head
+    title Login Page
+body
+    //- Inspired by https://dribbble.com/shots/5256615-Navigation-Concept
+    mixin menu(...items)
+        ul(id="menu-list", class="menu__wrapper hidden none")
+            each name in items
+                li(class="menu__item")
+                    p= name
+        
+    nav#menu.menu(aria-hidden='true', aria-label='Open Menu', role='button')
+        div.menu-icon
+            span.menu-icon--line.span1
+            span.menu-icon--line.span2
+            span.menu-icon--line.span3
+        
+    div.nav
+        +menu('home','portfolio','our services','about us','contact us')
+    div.social-grid
+    div.c-container
+    div.c-banner
+        div.c-banner__bg
+        div.c-banner__text
+        //- p Discover your journey
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css")
+    link(rel="stylesheet", href="./main.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato|Permanent+Marker")
+    script(src="./main.js")
