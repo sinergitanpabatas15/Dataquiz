@@ -169,3 +169,25 @@ Also created my first combinations of svg animation and div!
 **Thoughts:** I haven't use animation or transition for a long time, I guess this is time for me to pickup it as soon as possible.
 
 **Link to work:** [React SSR Template](https://codepen.io/snowleo208/pen/KxJMaE)
+
+### Day 24: 26 Sep 2018
+
+**Today's Progress**: Create rounded title in codepen!
+
+**Thoughts:** It is hard to maintain the same shape while word increases or in mobile version. Finally, I limited the word amount and set min-width in mobile version.
+
+**Link to work:** [Rounded Title](https://codepen.io/snowleo208/pen/PyYpNN)
+
+### Day 25 - 27: 1-3 Oct 2018
+
+**Today's Progress**: Create personal project for web scraping using php + curl + mysql.
+
+**Thoughts:** It is my first time to use php, curl with mysql. It seems easy to use php to do web scraping on the first sight, but it becomes difficult if I need to get information from 500+ pages. The key is sleep for few random seconds and set cookie and user agents using curl.
+
+### Day 28: 4 Oct 2018
+
+**Today's Progress**: Create a metric converter using boilerplate of Freecodecamp.
+
+**Thoughts:** I learnt a lot from this, even it is not finished yet. Learnt about Helmet.js and the implementations of unit test and functional tests.
+
+**Link to work:** [Metric Converter](https://github.com/snowleo208/metric-imp-converter)
