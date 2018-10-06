@@ -1,5 +1,149 @@
+// ----------------------------------
+// Var
+// ----------------------------------
+$phone: "only screen and (min-width : 576px)"
+$tablet: "only screen and (min-width : 768px)"
+$laptop: "only screen and (min-width : 992px)"
+$desktop: "only screen and (min-width : 1200px)"
+
+$bg: #F8F8F8
+$blue: #84B5DC
+$grey-border: #efefef
+
+
+
+// ----------------------------------
+// Base
+// ----------------------------------
+
 body
+    font-family: 'Open Sans', sans-serif
     width: 100%
     height: 100%
     margin: 0
     padding: 0
+    background: $bg
+    font-size: 1em
+    line-height: 1.48
+
+h1,h2,h3,h4,h5, h6
+    font-family: 'Comfortaa', cursive
+    font-weight: bolder
+
+h1
+    font-size: 2em
+    margin: .7em 0
+h2
+    font-size: 1.5em
+    margin: .8em 0
+h3
+    font-size: 1.17em
+    margin: .83em 0
+h4
+    font-size: 1em
+    margin: .83em 0
+h5
+    font-size: 0.83em
+    margin: 1.5em 0
+h6
+    font-size: .75em
+    margin: 1.67em 0
+
+.header
+    background: $bg
+    padding: 0 1em
+    border-bottom: solid 3px #E5E5E5
+    margin-bottom: 1em
+    &--logo
+        width: 2.5em
+        height: 2.5em
+        margin: 0.5em 0
+
+// ----------------------------------
+// Quiz
+// ----------------------------------
+
+.quiz
+    display: flex
+    flex-direction: column
+    background: white
+    border-radius: 8px
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2)
+    margin: 0.7em
+    @media #{$laptop}
+        flex-direction: row
+        max-width: 1280px
+        margin: 0 auto
+        img
+            border-radius: 0 8px 8px 0
+
+.quiz__image
+    width: 100%
+    flex: 0 auto
+    order: 2
+
+    @media #{$laptop}
+        width: 100%
+        height: auto
+        min-width: 480px
+        flex: 1 1 40%
+    img
+        width: 100%
+        height: 100%
+
+.quiz__wrapper
+    display: flex
+    flex-direction: column
+    padding: 1em
+    flex: 0 auto
+    @media #{$laptop}
+        flex: 0 0 60%
+        padding: 3em
+
+.quiz__answer
+    display: flex
+    flex-direction: column
+    &--item
+        background: white
+        color: rgb(25,25,25)
+        border: solid 5px $grey-border
+        border-radius: 0.5em
+        padding: 0.5em 0
+        margin-bottom: 1em
+        font-size: 1.15em
+        transition: ease 300ms
+        outline: none
+        &:hover, &:focus
+            border: solid 5px $blue
+            cursor: pointer
+        &:active
+            outline: none
+            transform: translateY(2px)
+
+// ----------------------------------
+// Results
+// ----------------------------------
+
+.result
+    @extend .quiz
+    flex-direction: column
+    padding: 0 1em
+    @media #{$laptop}
+        padding: 2em
+
+.result__button
+    border: 0
+    padding: 0.5em 0
+    margin-bottom: 1em
+    outline: none
+    color: white
+    transition: ease 300ms
+    width: 100%
+    max-width: 400px
+
+    &--facebook
+        background: #3b5998
+    &--twitter
+        background: #1dcaff
+    &:hover
+        cursor: pointer
