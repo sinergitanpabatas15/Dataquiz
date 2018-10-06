@@ -29,7 +29,7 @@ h1 {
 }
 
 .u-background, .c-left {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)), url("https://res.cloudinary.com/dkzj4hdmd/image/upload/v1498530840/ELFADSC08956_TP_V_wqqxok.jpg");
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)), url("http://cdn.atrera.com/images/ELFADSC08956_TP_V_wqqxok.jpg");
   background-position: center, center;
   background-size: cover, cover;
 }
