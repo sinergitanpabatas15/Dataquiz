@@ -191,3 +191,13 @@ Also created my first combinations of svg animation and div!
 **Thoughts:** I learnt a lot from this, even it is not finished yet. Learnt about Helmet.js and the implementations of unit test and functional tests.
 
 **Link to work:** [Metric Converter](https://github.com/snowleo208/metric-imp-converter)
+
+### Day 29: 5 Oct 2018
+
+**Today's Progress**: Add more unit tests on metric converter.
+
+### Day 30: 6 Oct 2018
+
+**Today's Progress**: Add more images in quiz and start development on mobile and desktop version.
+
+**Thoughts:**: It is a pain to search for questions and images for the quizzes, but I finished it! The quiz part still need some adjustments for desktop versions but most of the functions are done. Luckily it is a simple quiz only.
