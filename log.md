@@ -201,3 +201,9 @@ Also created my first combinations of svg animation and div!
 **Today's Progress**: Add more images in quiz and start development on mobile and desktop version.
 
 **Thoughts:**: It is a pain to search for questions and images for the quizzes, but I finished it! The quiz part still need some adjustments for desktop versions but most of the functions are done. Luckily it is a simple quiz only.
+
+### Day 31-32: 8-9 Oct 2018
+
+**Today's Progress**: Create answer transition of quiz page.
+
+**Thoughts:**: The page is not finished yet, as the transition has some weird issues. Still need some time to fix it :(

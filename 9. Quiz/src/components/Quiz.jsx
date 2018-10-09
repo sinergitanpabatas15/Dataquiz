@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { hot } from 'react-hot-loader';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import * as data from '../data.json';
 import Header from './Header';
@@ -16,8 +17,23 @@ class Quiz extends Component {
       list: data.default,
       next: 1,
       finish: false,
+      animate: true,
     };
   }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (this.state.id !== prevState.id) {
+      this.setState({
+        animate: true,
+      });
+    }
+  }
+
+  triggerAnimation = bool => {
+    this.setState({
+      animate: bool,
+    });
+  };
 
   getAnswer = (e, answer) => {
     this.setState({
@@ -50,19 +66,33 @@ class Quiz extends Component {
             <div className="quiz__question">
               <h2>{this.state.list[this.state.id]['question']}</h2>
             </div>
-            <div className="quiz__answer">
+            {/* <div className="quiz__answer"> */}
+            <TransitionGroup className="quiz__answer">
               {this.state.list[this.state.id]['answer'].map((item, index) => {
+                const delay = Math.max(0, index * 100);
                 return (
-                  <button
-                    onClick={e => this.getAnswer(e, index)}
-                    className="quiz__answer--item"
-                    key={index}
+                  <CSSTransition
+                    key={'a' + this.state.id + ' ' + item}
+                    timeout={400}
+                    classNames="fade"
+                    unmountOnExit
+                    onExited={() => {
+                      this.triggerAnimation(false);
+                    }}
                   >
-                    {item}
-                  </button>
+                    <button
+                      onClick={e => this.getAnswer(e, index)}
+                      key={'a' + this.state.id + ' ' + item}
+                      className="quiz__answer--item"
+                      style={{ transitionDelay: `${delay}ms` }}
+                    >
+                      {item}
+                    </button>
+                  </CSSTransition>
                 );
               })}
-            </div>
+            </TransitionGroup>
+            {/* </div> */}
           </div>
         </section>
       </React.Fragment>
