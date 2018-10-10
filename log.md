@@ -207,3 +207,7 @@ Also created my first combinations of svg animation and div!
 **Today's Progress**: Create answer transition of quiz page.
 
 **Thoughts:**: The page is not finished yet, as the transition has some weird issues. Still need some time to fix it :(
+
+### Day 33: 10 Oct 2018
+
+**Today's Progress**: Create introduction page and result page with new image. Add fade in effects on logo, text, header ... etc.
