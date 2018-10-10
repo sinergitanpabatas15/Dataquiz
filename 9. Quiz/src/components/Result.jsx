@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LazyLoad from 'react-lazyload';
 import PropTypes from 'prop-types';
 
 class Result extends Component {
@@ -34,24 +35,35 @@ class Result extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="result">
-          <h1>Your Results</h1>
-          <p>
-            Score: {this.props.answer} / {this.props.totalQuestion}
-          </p>
+        <section className="result fade-in">
+          <div className="result__image">
+            <LazyLoad height={500}>
+              <img
+                src="./assets/result-tanya-patrikeyeva-423820-unsplash.jpg"
+                alt="Thank you for answering this quiz!"
+              />
+            </LazyLoad>
+          </div>
+          <div className="result__text">
+            <h1>Your Results</h1>
+            <p>
+              You get <strong>{this.props.answer}</strong> out of
+              <strong> {this.props.totalQuestion} </strong>! Well done!
+            </p>
 
-          <button
-            className="result__button result__button--twitter"
-            onClick={() => this.share('twitter')}
-          >
-            Share in Twitter
-          </button>
-          <button
-            className="result__button result__button--facebook"
-            onClick={() => this.share('facebook')}
-          >
-            Share in Facebook
-          </button>
+            <button
+              className="result__button result__button--twitter"
+              onClick={() => this.share('twitter')}
+            >
+              Share in Twitter
+            </button>
+            <button
+              className="result__button result__button--facebook"
+              onClick={() => this.share('facebook')}
+            >
+              Share in Facebook
+            </button>
+          </div>
         </section>
       </React.Fragment>
     );

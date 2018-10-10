@@ -9,6 +9,7 @@ $desktop: "only screen and (min-width : 1200px)"
 $bg: #F8F8F8
 $blue: #84B5DC
 $grey-border: #efefef
+$logo: #EE7B7A
 
 
 
@@ -50,20 +51,54 @@ h6
     margin: 1.67em 0
 
 .header
+    position: relative
     background: $bg
     padding: 0 1em
     border-bottom: solid 3px #E5E5E5
     margin-bottom: 1em
+    transition: height ease 400ms
     &--logo
         width: 2.5em
         height: 2.5em
         margin: 0.5em 0
 
+.intro
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    height: 100%
+    text-align: center
+    z-index: 1030
+    transition-delay: 400ms
+    button
+        background: $logo
+        border: 0
+        padding: 0.5em 2em
+        border-radius: 10px
+        color: white
+        transition: ease 300ms
+        &:hover
+            background: tomato
+            cursor: pointer
+
+.header--logo__large
+    width: 13em
+    height: 13em
+    @media #{$laptop}
+        width: 15em
+        height: 15em
+
+
 // ----------------------------------
 // Quiz
 // ----------------------------------
-
-.quiz
+@mixin quiz-section
     display: flex
     flex-direction: column
     background: white
@@ -75,14 +110,16 @@ h6
         max-width: 1280px
         margin: 0 auto
         min-height: 450px;
-        img
-            border-radius: 0 8px 8px 0
 
-.quiz__image
+.quiz
+    img
+        border-radius: 0 8px 8px 0
+    @include quiz-section
+
+@mixin quiz-image
     width: 100%
     flex: 0 auto
     order: 2
-
     @media #{$laptop}
         width: 100%
         height: auto
@@ -91,13 +128,16 @@ h6
         width: 100%
         height: 100%
 
+.quiz__image
+    @include quiz-image
+
 .quiz__wrapper
     display: flex
     flex-direction: column
     padding: 1em
     flex: 0 auto
     @media #{$laptop}
-        flex: 0 0 60%
+        flex: 1 1 auto
         padding: 3em
 
 .quiz__question
@@ -128,13 +168,26 @@ h6
 // ----------------------------------
 
 .result
-    @extend .quiz
-    flex-direction: column
-    padding: 0 1em
+    @include quiz-section
+    // padding: 0 1em
     @media #{$laptop}
-        padding: 2em
+        padding: 0
+        flex-direction: row
+    
+    &__image
+        @include quiz-image
+
+    &__text
+        display: flex
+        flex-direction: column
+        padding: 1em
+        flex: 0 auto
+        @media #{$laptop}
+            flex: 1 1 auto
+            padding: 3em
 
 .result__button
+    display: block
     border: 0
     padding: 0.5em 0
     margin-bottom: 1em
@@ -142,6 +195,11 @@ h6
     color: white
     transition: ease 300ms
     width: 100%
+    &:hover
+        opacity: 0.9
+    @media #{$laptop}
+        width: 400px
+        margin-bottom: 1em
 
     &--facebook
         background: #3b5998
@@ -156,11 +214,11 @@ h6
 // ----------------------------------
 .fade-enter
   opacity: 0.01
-  transform: translateX(-10px)
+//   transform: translateX(-10px)
 
 .fade-enter-active
   opacity: 1
-  transform: translateX(0)
+//   transform: translateX(0)
   transition: all 400ms ease-in-out
 
 .fade-exit
@@ -171,3 +229,15 @@ h6
   opacity: 0.01
   display: none
   transition: all 400ms ease-in
+
+.fade-in
+    animation: fade-in ease 600ms
+
+.fade-out
+    animation: fade-in ease 600ms forwards
+
+@keyframes fade-in
+    0%
+        opacity: 0
+    100%
+        opacity: 1

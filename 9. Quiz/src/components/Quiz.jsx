@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { hot } from 'react-hot-loader';
+import LazyLoad from 'react-lazyload';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import * as data from '../data.json';
@@ -45,6 +46,8 @@ class Quiz extends Component {
       next: this.state.next + 1,
       finish: this.state.next + 1 > this.state.totalQuestion,
     });
+
+    window.scroll(0, 0);
   };
 
   render() {
@@ -53,14 +56,17 @@ class Quiz extends Component {
         <Header />
         <section className="quiz">
           <div className="quiz__image">
-            <img
-              src={`../../assets/q${
-                this.state.id + 1 < 10
-                  ? '0' + (this.state.id + 1)
-                  : this.state.id + 1
-              }.jpg`}
-              alt=""
-            />
+            <LazyLoad height={500}>
+              <img
+                src={`./assets/q${
+                  this.state.id + 1 < 10
+                    ? '0' + (this.state.id + 1)
+                    : this.state.id + 1
+                }.jpg`}
+                alt=""
+                className={this.state.animate ? 'fade-in' : ''}
+              />
+            </LazyLoad>
           </div>
           <div className="quiz__wrapper">
             <div className="quiz__question">

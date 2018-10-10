@@ -46,6 +46,7 @@
   "dependencies": {
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
+    "react-lazyload": "^2.3.0",
     "react-transition-group": "^2.4.0"
   }
 }

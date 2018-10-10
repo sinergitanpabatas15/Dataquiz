@@ -15,16 +15,15 @@ module.exports = merge(common, {
   },
   optimization: {
     minimizer: [
-        new UglifyJsPlugin({
-          cache: true,
-          parallel: true
-        }),
-        new OptimizeCSSAssetsPlugin({})
-      ]  
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true
+      }),
+      new OptimizeCSSAssetsPlugin({})
+    ]
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
@@ -36,7 +35,7 @@ module.exports = merge(common, {
         }
       },
       {
-        test: /\.(css|scss)$/,
+        test: /\.(css|scss|sass)$/,
         use: [
           "style-loader",
           MiniCssExtractPlugin.loader,
@@ -49,16 +48,16 @@ module.exports = merge(common, {
   },
   plugins: [
     new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify("production"),
+      'process.env.NODE_ENV': JSON.stringify("production"),
     }),
     new MiniCssExtractPlugin({
       publicPath: "./",
       filename: "style.[contenthash:5].css"
     }),
     new CleanWebpackPlugin(["dist", "build"], {
-        verbose: true,
-        dry: false
-        // exclude: ['shared.js']
-      }),  
+      verbose: true,
+      dry: false
+      // exclude: ['shared.js']
+    }),
   ]
 });

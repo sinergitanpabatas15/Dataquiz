@@ -13,6 +13,7 @@ image from
 - Photo by Jakub Dziubak on Unsplash
 - Photo by Alisher Sharip on Unsplash
 - Photo by Laura Cros on Unsplash
+- Photo by Tanya Patrikeyeva on Unsplash (Result page)
 - [Simply Recipes Food and Cooking Blog](https://www.simplyrecipes.com/recipes/clam_chowder/)
 - Icons made by [Freepik](http://www.freepik.com)
 
