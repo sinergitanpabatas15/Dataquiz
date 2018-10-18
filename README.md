@@ -32,8 +32,8 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 
 [Ladder Menu](https://snowleo208.github.io/100-Days-of-Code/10.%20Ladder%20Menu/index.html)
 
-[Quiz](https://snowleo208.github.io/100-Days-of-Code/9.%20Quiz/index.html)
+[Food Trivia Quiz](https://codepen.io/snowleo208/pen/WajvaJ)
 
 ## Log
 
-[View my log here](https://github.com/snowleo208/100-Days-of-Code/blob/master/log.md)
+[View my coding and thoughts log here](https://github.com/snowleo208/100-Days-of-Code/blob/master/log.md)
