@@ -210,4 +210,34 @@ Also created my first combinations of svg animation and div!
 
 ### Day 33: 10 Oct 2018
 
-**Today's Progress**: Create introduction page and result page with new image. Add fade in effects on logo, text, header ... etc.
+**Today's Progress**: Create introduction page and result page with new image for quiz. Add fade in effects on logo, text, header ... etc.
+
+### Day 34: 11 Oct 2018
+
+**Today's Progress**:Finally put my quiz into codepen!!
+
+**Thoughts:**: Used lots of time to solve the React problems in codepen, especially the react-transition-group issues. However, it is worth it when I see the results!
+
+**Link to work:** [Food Trivia Quiz](https://codepen.io/snowleo208/pen/WajvaJ)
+
+### Day 34: 11 Oct 2018
+
+**Today's Progress**: Fix some minor issues of the result page in codepen, fixed the share link to codepen url.
+
+**Link to work:** [Food Trivia Quiz](https://codepen.io/snowleo208/pen/WajvaJ)
+
+### Day 35 - 37: 12-14 Oct 2018
+
+**Today's Progress**: Try to figure out the new magento 2 and how to migrate a old magento 1 site to version 2.2. The structure of magento 1 and 2 is extremely different and I used lots of time to figure out how to use composer and work with magento cli. Finally migrated all attributes and products after 2 days!!
+
+**Thoughts:**: The documentation of migration tools is not very clear, I used lots of time to figure out what's happening. Especially I need to solve all error before migration, otherwise it would cause error and need to revert to clean database.
+
+### Day 38 - 40: 15-17 Oct 2018
+
+**Today's Progress**: Create a new custom module for overwriting core invoice and shipment pdf of magento 2.2. Change minor things of the pdf e.g. font and remove some fields e.g. tax in invoice and shipment pdf.
+
+**Thoughts:**: It is great when I saw my custom pdf works. I learn more about namespace and override functions in php... lol.
+
+### Day 41: 18 Oct 2018
+
+**Today's Progress**: Add back custom contents of original site to new one.
