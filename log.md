@@ -238,6 +238,12 @@ Also created my first combinations of svg animation and div!
 
 **Thoughts:**: It is great when I saw my custom pdf works. I learn more about namespace and override functions in php... lol.
 
-### Day 41: 18 Oct 2018
+### Day 41 - 43: 18-20 Oct 2018
 
-**Today's Progress**: Add back custom contents of original site to new one.
+**Today's Progress**: Add back custom contents of original site to new one. For the php web scraper, the cookie using curl finally works, finally knew that I need to put something like `cookie.txt` and `curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1)` after the cookie `CURLOPT_COOKIEFILE` settings.
+
+## Day 44: 21 Oct 2018
+
+**Today's Progress**: Add new modules to magento: yopto, sendgrid and alsoviewed. Add more customisations to magento front-end, change in stock wordings to custom attribute and add custom translations to current theme.
+
+Besides magento, now tried to create .Net backend and walk through official materials. Hope to create the book store project in freecodecamp using .Net server.
