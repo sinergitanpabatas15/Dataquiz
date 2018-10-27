@@ -247,3 +247,11 @@ Also created my first combinations of svg animation and div!
 **Today's Progress**: Add new modules to magento: yopto, sendgrid and alsoviewed. Add more customisations to magento front-end, change in stock wordings to custom attribute and add custom translations to current theme.
 
 Besides magento, now tried to create .Net backend and walk through official materials. Hope to create the book store project in freecodecamp using .Net server.
+
+## Day 45 - 47: 24-27 Oct 2018
+
+**Today's Progress**: Resume my progress of the night life app for FreeCodeCamp, created overlay for map and images in bar details page.
+
+**Thoughts:**: I learn a lot about the High Order Component(HOC) and passing children using overlay component.
+
+However, I can't figure out how to make HOC work with my current code base with React, React-redux and React-saga. It seems work on home page but failed in bar details page due to reached maximum update limits. Why?
