@@ -255,3 +255,11 @@ Besides magento, now tried to create .Net backend and walk through official mate
 **Thoughts:**: I learn a lot about the High Order Component(HOC) and passing children using overlay component.
 
 However, I can't figure out how to make HOC work with my current code base with React, React-redux and React-saga. It seems work on home page but failed in bar details page due to reached maximum update limits. Why?
+
+## Day 46 - 47: 28 Oct 2018
+
+**Today's Progress**: Deployed nightlife application to heroku.
+
+**Thoughts:**: Finally got heroku works with PostgresQL! However, seems Google login doesn't work after update, luckily I fixed it in few hours. Still need to add profile page of user and add more functions!
+
+**Link to work:** [Hebera - Nightlife coordination app](https://intense-oasis-46472.herokuapp.com)
