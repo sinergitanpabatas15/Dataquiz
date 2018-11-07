@@ -36,6 +36,10 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 
 [Hebera - Nightlife coordination app](https://intense-oasis-46472.herokuapp.com)
 
+[Loading Progress Bar](https://codepen.io/snowleo208/pen/WYbZKe)
+
+[Submit button with SVG animations](https://codepen.io/snowleo208/pen/aQvjyy)
+
 ## Log
 
 [View my coding and thoughts log here](https://github.com/snowleo208/100-Days-of-Code/blob/master/log.md)
