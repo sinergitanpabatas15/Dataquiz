@@ -40,6 +40,8 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 
 [Submit button with SVG animations](https://codepen.io/snowleo208/pen/aQvjyy)
 
+[Alignment Button with Animations](https://codepen.io/snowleo208/pen/KrMGEo)
+
 ## Log
 
 [View my coding and thoughts log here](https://github.com/snowleo208/100-Days-of-Code/blob/master/log.md)
