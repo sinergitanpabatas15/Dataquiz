@@ -248,7 +248,7 @@ Also created my first combinations of svg animation and div!
 
 Besides magento, now tried to create .Net backend and walk through official materials. Hope to create the book store project in freecodecamp using .Net server.
 
-## Day 45 - 47: 24-27 Oct 2018
+## Day 45 - 47: 24-26 Oct 2018
 
 **Today's Progress**: Resume my progress of the night life app for FreeCodeCamp, created overlay for map and images in bar details page.
 
@@ -256,10 +256,21 @@ Besides magento, now tried to create .Net backend and walk through official mate
 
 However, I can't figure out how to make HOC work with my current code base with React, React-redux and React-saga. It seems work on home page but failed in bar details page due to reached maximum update limits. Why?
 
-## Day 46 - 47: 28 Oct 2018
+## Day 48: 30 Oct 2018
 
 **Today's Progress**: Deployed nightlife application to heroku.
 
 **Thoughts:**: Finally got heroku works with PostgresQL! However, seems Google login doesn't work after update, luckily I fixed it in few hours. Still need to add profile page of user and add more functions!
 
 **Link to work:** [Hebera - Nightlife coordination app](https://intense-oasis-46472.herokuapp.com)
+
+## Day 49-51: 8-10 November 2018
+
+**Today's Progress**: Created few html mini widgets using dribbble designs.
+
+**Thoughts:**: Used dribbble's ui animations to improve my CSS animation and interaction ui skills. It is hard to master this skill but I finially finished two! Hope to improve more in the future :)
+
+**Link to work:**
+[Submit button with SVG animations](https://codepen.io/snowleo208/pen/aQvjyy)
+
+[Alignment Button with Animations](https://codepen.io/snowleo208/pen/KrMGEo)
