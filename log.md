@@ -274,3 +274,24 @@ However, I can't figure out how to make HOC work with my current code base with 
 [Submit button with SVG animations](https://codepen.io/snowleo208/pen/aQvjyy)
 
 [Alignment Button with Animations](https://codepen.io/snowleo208/pen/KrMGEo)
+
+## Day 52-53: 11-12 November 2018
+
+**Today's Progress**: Try to fix some bugs of nightlife app on mobile version.
+
+**Link to work:** [Hebera - Nightlife coordination app](https://intense-oasis-46472.herokuapp.com)
+
+## Day 55-59: 13-18 November 2018
+
+**Today's Progress**: Try to manually migrate orders and create new magento 2 products. Also, create a new script for automatically scrape data and create product csv from specific website.
+
+**Thoughts:**: My first time to use curl and php to scrape and create csv files. It is not very difficult, but needs lots of adjustments for csv files.
+
+## Day 60-61: 19-20 November 2018
+
+**Today's Progress**: Created a new React app for getting currency rates from API. Try to implement different functions, change base currency and add/remove currency lists.
+
+**Thoughts:**: My first time to create a PWA (Progressive Web Apps), hope it will be okay when deploy.
+
+**Link to work:**
+[Currency PWA](https://gitlab.com/snowleo208/currency-pwa)
