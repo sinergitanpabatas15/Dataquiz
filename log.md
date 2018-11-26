@@ -295,3 +295,21 @@ However, I can't figure out how to make HOC work with my current code base with 
 
 **Link to work:**
 [Currency PWA](https://gitlab.com/snowleo208/currency-pwa)
+
+## Day 62-64: 21-23 November 2018
+
+**Today's Progress**: Add d3 graph into [Currency PWA](https://gitlab.com/snowleo208/currency-pwa)'s React component, just a line graph for showing currency rates.
+
+**Thoughts:**: My first time to use d3 v4 with React, used lots of time to make it work. However, the result seems good. I still need to create a mouseover effect and tooltip for rates.
+
+**Link to work:**
+[Currency PWA](https://gitlab.com/snowleo208/currency-pwa)
+
+## Day 65: 26 November 2018
+
+**Today's Progress**: Use Lumen (Laravel) to create backend for [Currency PWA](https://gitlab.com/snowleo208/currency-pwa) and added converter, get currency rates and a scheduled job to fetch rates from 3rd party API.
+
+**Thoughts:**: My first time to create API with Lumen, have a difficult time to understand the mechanism of triggering the jobs/queues/scheduled tasks. Finally, I added my first job to fetch API. Hooray!
+
+**Link to work:**
+[Currency Backend](https://gitlab.com/snowleo208/currency-backend)
