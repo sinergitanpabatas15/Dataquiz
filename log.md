@@ -311,5 +311,13 @@ However, I can't figure out how to make HOC work with my current code base with 
 
 **Thoughts:**: My first time to create API with Lumen, have a difficult time to understand the mechanism of triggering the jobs/queues/scheduled tasks. Finally, I added my first job to fetch API. Hooray!
 
+## Day 66: 27 November 2018
+
+**Today's Progress**: Use Lumen and added login/register method with JWT token. Also implemented reset password function with copying methods from Laravel.
+
+**Thoughts:**: Have a hard time to figure out how to use built-in function of Laravel (reset password email) with Lumen. First, I tried the method from StackOverflow, but the reset url in email always duplicated with "http://localhost:4500", and I cannot set to different url. Finally I figure out that, I should create a new notification and sent the token with the new url, and now it is working. 
+
+I can set the url to any url I want. Yeah!
+
 **Link to work:**
 [Currency Backend](https://gitlab.com/snowleo208/currency-backend)
