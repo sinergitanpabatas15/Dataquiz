@@ -1,0 +1,51 @@
+html(lang="en")
+meta(charset="UTF-8")
+meta(name="viewport" content="width=device-width, initial-scale=1.0")
+meta(http-equiv="X-UA-Compatible" content="ie=edge")
+head
+    title Instant Form Validation
+body
+    header.c-banner
+    div.c-container
+        .c-contact
+            h1 We'd love to hear from you.
+            p Have a question about us? Need to talk to customer service? Have a great idea? Drop us a line and we'll get back to you as soon as we can.
+            p Have an urgent problem about an order? Call our warehouse at 1234-1234.
+            p We can also get in touch on 
+                a(href="https://www.twitter.com/" target="_blank") Twitter
+                | .
+        form.c-form#form
+            label(for="email")
+                span.c-form-label Email 
+                     abbr(title="Required") *
+                input.c-form-input#form-email(type="email", name="email" required='required' pattern=".{3,}")
+                span.u-alert#form-email-error Please enter a valid email format
+            label(for="name")
+                span.c-form-label Name
+                input.c-form-input#form-name(type="text", name="name" pattern="^[a-z ,.'-]+$")
+                span.u-alert#form-name-error Please enter a valid name with alphabets only
+            label(for="message")
+                span.c-form-label Message 
+                     abbr(title="Required") *
+                textarea.c-form-input#form-message(minlength="10", maxlength="200",rows="4", name="message", required='required')
+                span.c-form-input__length
+                    span#form-message-length 0
+                    | /200
+                span.u-alert#form-message-error Please enter at least 10 characters and less than 200 characters.
+            label(for="signup").c-form-group
+                input.c-form-checkbox#form-signup(type="checkbox", name="signup")
+                span.c-form-label Sign me up for latest updates
+            input.c-form-submit#form-submit(type="submit", value="Submit", name="submit")
+            span.u-alert#form-submit-error Please correct all information and try again.
+        div.c-thankyou.u-hide#form-thankyou
+            h1 Thank you!
+            p We will contact you as soon as possible.
+    footer
+        p Page design from 
+            a(href="https://uigarage.net/boka-contact-form/" target="_blank") Boka Contact Form
+    
+    
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto|Lato")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css")
+    link(rel="stylesheet", href="./main.css")
+    script(src="./main.js")

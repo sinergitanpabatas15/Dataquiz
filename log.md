@@ -315,9 +315,30 @@ However, I can't figure out how to make HOC work with my current code base with 
 
 **Today's Progress**: Use Lumen and added login/register method with JWT token. Also implemented reset password function with copying methods from Laravel.
 
-**Thoughts:**: Have a hard time to figure out how to use built-in function of Laravel (reset password email) with Lumen. First, I tried the method from StackOverflow, but the reset url in email always duplicated with "http://localhost:4500", and I cannot set to different url. Finally I figure out that, I should create a new notification and sent the token with the new url, and now it is working. 
+**Thoughts:**: Have a hard time to figure out how to use built-in function of Laravel (reset password email) with Lumen. First, I tried the method from StackOverflow, but the reset url in email always duplicated with "http://localhost:4500", and I cannot set to different url. Finally I figure out that, I should create a new notification and sent the token with the new url, and now it is working.
 
 I can set the url to any url I want. Yeah!
 
 **Link to work:**
 [Currency Backend](https://gitlab.com/snowleo208/currency-backend)
+
+## Day 67-69: 28-30 November 2018
+
+**Today's Progress**: Working on D3 and React, try to add currency chart using D3.js, which is my first trial and error.
+
+**Thoughts:**: Haven't use D3 for a long time, needs more time to figure out how it works and how can it work with React.
+
+## Day 70 - 74: 3-6 Dec 2018
+
+**Today's Progress**: Read articles on pagespeed and how to get the best loading performance using defer, prefetch and preconnect.
+
+**Thoughts:**: It is difficult to cater with Google Pagespeed, but the score goes higher when some tweaks are implemented. Glad to see the pagespeed score rises from 69 to 87 in mobile and 82 to 96 in desktop!!
+
+## Day 75: 14 Dec 2018
+
+**Today's Progress**: Create a contact form with instant validation using HTML5 validation with input event listener.
+
+**Thoughts:**: Learn more about input and change event listener of form. It looks really good when I try to use tick and error svg as background image! It looks really professional and clean.
+
+**Link to work:**
+[Instant form validation](https://codepen.io/snowleo208/pen/RErbNy)
