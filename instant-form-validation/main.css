@@ -47,17 +47,12 @@ a:active {
   content: "";
   position: absolute;
   bottom: -1.2em;
-  left: calc((100% - 3em) / 2);
+  left: calc((100% - 2.4em) / 2);
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 1.2em 1.2em 0 1.2em;
   border-color: #FF9473 transparent transparent transparent;
-}
-@media only screen and (min-width : 992px) {
-  .c-banner:before {
-    left: calc((100% - 2.4em) / 2);
-  }
 }
 
 .c-container {
@@ -116,11 +111,12 @@ a:active {
 
 .c-form {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0;
 }
 @media only screen and (min-width : 992px) {
   .c-form {
     padding: 1em;
+    margin: 0 auto;
   }
 }
 .c-form label {

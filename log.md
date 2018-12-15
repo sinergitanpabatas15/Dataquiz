@@ -342,3 +342,11 @@ I can set the url to any url I want. Yeah!
 
 **Link to work:**
 [Instant form validation](https://codepen.io/snowleo208/pen/RErbNy)
+[How to create your own instant form validation](https://medium.com/@snowleo208/how-to-create-your-own-instant-form-validation-1a5a441d1b5b)
+
+## Day 76: 15 Dec 2018
+
+**Today's Progress**: Create a post of how I struggled to get higher score in Google PageSpeed last week. Also, read a lot from other developers about loading performance and some insteresting tech like [mdx-deck](https://github.com/jxnblk/mdx-deck).
+
+**Link to work:**
+[Three things I learn after fighting with Google PageSpeed](https://dev.to/snowleo208/three-things-i-learn-after-fighting-with-google-pagespeed-3jk9)

@@ -2,7 +2,7 @@
 
 This repo is a collection of my 100 days of code journey, mostly focused on front-end web development. Project ideas mainly come from [Daily UI challenges](http://collectui.com/).
 
-## Results:
+## Projects
 
 [Login Page](https://snowleo208.github.io/100-Days-of-Code/1.%20Login%20Page/index.html)
 
@@ -15,8 +15,6 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 [Flex Table](https://snowleo208.github.io/100-Days-of-Code/5.%20Flex%20Table/index.html)
 
 - [Grid Layout Version](https://snowleo208.github.io/100-Days-of-Code/5.%20Flex%20Table/grid/index.html) / [Semantic Version](https://snowleo208.github.io/100-Days-of-Code/5.%20Flex%20Table/semantic/index.html)
-
-- [Article: How to create responsive table in modern way](https://medium.com/@snowleo208/how-to-create-responsive-table-d1662cb62075)
 
 [404 page](https://snowleo208.github.io/100-Days-of-Code/6.%20404%20Page/index.html)
 
@@ -42,6 +40,16 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 
 [Alignment Button with Animations](https://codepen.io/snowleo208/pen/KrMGEo)
 
+[Instant form validation](https://snowleo208.github.io/100-Days-of-Code/instant-form-validation/index.html)
+
+## Posts
+
+[Article: How to create responsive table in modern way](https://medium.com/@snowleo208/how-to-create-responsive-table-d1662cb62075)
+
+[How to create your own instant form validation](https://medium.com/@snowleo208/how-to-create-your-own-instant-form-validation-1a5a441d1b5b)
+
+[Three things I learn after fighting with Google PageSpeed](https://dev.to/snowleo208/three-things-i-learn-after-fighting-with-google-pagespeed-3jk9)
+
 ## Log
 
-[View my coding and thoughts log here](https://github.com/snowleo208/100-Days-of-Code/blob/master/log.md)
+[View my coding and thoughts here](https://github.com/snowleo208/100-Days-of-Code/blob/master/log.md)
