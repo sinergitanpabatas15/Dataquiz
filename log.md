@@ -350,3 +350,9 @@ I can set the url to any url I want. Yeah!
 
 **Link to work:**
 [Three things I learn after fighting with Google PageSpeed](https://dev.to/snowleo208/three-things-i-learn-after-fighting-with-google-pagespeed-3jk9)
+
+## Day 77: 22-23 Dec 2018
+
+**Today's Progress**: Start working on my new portfolio with new design. Decided to use React for this project.
+
+**Thoughts:**: Used lots of time to find a great design for my portfolio, finally got one. Try to add as much projects as possible, using React with JSON with react-router.
