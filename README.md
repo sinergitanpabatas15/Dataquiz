@@ -12,7 +12,9 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 
 [Score Meter](https://snowleo208.github.io/100-Days-of-Code/4.%20Score%20Meter/index.html)
 
-[Flex Table](https://snowleo208.github.io/100-Days-of-Code/5.%20Flex%20Table/index.html)
+#### Table
+
+- [Flex Table](https://snowleo208.github.io/100-Days-of-Code/5.%20Flex%20Table/index.html)
 
 - [Grid Layout Version](https://snowleo208.github.io/100-Days-of-Code/5.%20Flex%20Table/grid/index.html) / [Semantic Version](https://snowleo208.github.io/100-Days-of-Code/5.%20Flex%20Table/semantic/index.html)
 
@@ -20,7 +22,7 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 
 [Music Player](https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/index.html)
 
-### Smooth Scroll
+#### Smooth Scroll
 
 - [requestAnimationFrame version](https://snowleo208.github.io/100-Days-of-Code/8.%20Smooth%20Scroll/animation/index.html)
 
