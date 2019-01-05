@@ -351,8 +351,28 @@ I can set the url to any url I want. Yeah!
 **Link to work:**
 [Three things I learn after fighting with Google PageSpeed](https://dev.to/snowleo208/three-things-i-learn-after-fighting-with-google-pagespeed-3jk9)
 
-## Day 77: 22-23 Dec 2018
+## Day 77-78: 22-23 Dec 2018
 
 **Today's Progress**: Start working on my new portfolio with new design. Decided to use React for this project.
 
 **Thoughts:**: Used lots of time to find a great design for my portfolio, finally got one. Try to add as much projects as possible, using React with JSON with react-router.
+
+## Day 79-80: 24-25 Dec 2018
+
+**Today's Progress**: Working on my portfolio and added react router dom and new contents.
+
+## Day 81: 1 Jan 2019
+
+**Today's Progress**: Read some articles on CSS modules and styled components. Wondered which is better for my projects. :)
+
+**Thoughts:**: Seems CSS modules are more convenient to implement on existing, also it is easier to share styles. For the styled components, all styles are in the components, which seems difficult to share styles between components...
+
+## Day 82: 2 Jan 2019
+
+**Today's Progress**: Learn about the gatsby.js, which is a static site framework, contains router, server rendering and other plugins, included simple ecommerce function.
+
+**Thoughts:**: Try to figure out what Gatsby.js does, in my opinion, it just look like a bundle of different tools. And its routing function only existing when I use seperate JS files, how can I do routing like abc/:id? Seems not very practical to use routing like this. Of course, it is fine to use it for static pages.
+
+## Day 83: 5 Jan 2019
+
+**Today's Progress**: Continue working on my portfolio page and add fix on my weather app v2.
