@@ -44,6 +44,8 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 
 [Instant form validation](https://snowleo208.github.io/100-Days-of-Code/instant-form-validation/index.html)
 
+[Testing Vanilla JS and HTML page using Jest](https://github.com/snowleo208/test-js-example)
+
 ## Posts
 
 [Article: How to create responsive table in modern way](https://medium.com/@snowleo208/how-to-create-responsive-table-d1662cb62075)
@@ -51,6 +53,8 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 [How to create your own instant form validation](https://medium.com/@snowleo208/how-to-create-your-own-instant-form-validation-1a5a441d1b5b)
 
 [Three things I learn after fighting with Google PageSpeed](https://dev.to/snowleo208/three-things-i-learn-after-fighting-with-google-pagespeed-3jk9)
+
+[Things I learned after writing tests for JS and HTML page](https://dev.to/snowleo208/things-i-learned-after-writing-tests-for-js-and-html-page-4lja)
 
 ## Log
 

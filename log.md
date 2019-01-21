@@ -375,4 +375,27 @@ I can set the url to any url I want. Yeah!
 
 ## Day 83: 5 Jan 2019
 
-**Today's Progress**: Continue working on my portfolio page and add fix on my weather app v2.
+**Today's Progress**: Continue working on my portfolio page and add fix on my weather app v2. Fixed webpack config and finally used new dependencies without vulnerability issues.
+
+## Day 84: 12 Jan 2019
+
+**Today's Progress**: Add article of how to create testings using Jest with plain HTML + Javascript page.
+
+**Link to work:**
+[Things I learned after writing tests for JS and HTML page](https://dev.to/snowleo208/things-i-learned-after-writing-tests-for-js-and-html-page-4lja)
+[Github](https://github.com/snowleo208/test-js-example)
+
+## Day 85: 13 Jan 2019
+
+**Today's Progress**: Continue in working on my portfolio page, finally working on Netlify. The most important thing is the path of base directory. I used lots of time to figure out, if I need to put index.html in root with other asset folders, I need to put base directory: '/' in deploy settings in Netlify panel.
+
+**Link to work:**
+[Portfolio](https://yukicheung.atrera.com)
+
+## Day 86: 15 Jan 2019
+
+**Today's Progress**: Used some time to create portfolio gallery images and put it on my portfolio.
+
+## Day 87: 21 Jan 2019
+
+**Today's Progress**: Add contact form validation function and grouped all page components to "Page" folder. Still need some time to add lazy loading function in portfolio.
