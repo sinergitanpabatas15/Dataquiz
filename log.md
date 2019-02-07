@@ -399,3 +399,25 @@ I can set the url to any url I want. Yeah!
 ## Day 87: 21 Jan 2019
 
 **Today's Progress**: Add contact form validation function and grouped all page components to "Page" folder. Still need some time to add lazy loading function in portfolio.
+
+## Day 88-89: 26 - 27 Jan 2019
+
+**Today's Progress**: Used php to create web crawler, for getting ASIN from Amazon JP page. Set curl to Amazon JP search page with cookie, search project by JAN barcode, then extract all ASINs inside result URL.
+
+## Day 90: 2 Feb 2019
+
+**Today's Progress**: Continue working on my new portfolio site. Today started working on the contact form, adding styles and invalid styles.
+
+## Day 91: 3 Feb 2019
+
+**Today's Progress**: Continue working on the contact form, added PHP script to get form data. Also, post data from client side. Furthermore, changed all path of facico and font to local, for enhancing loading performance.
+
+## Day 92: 6 Feb 2019
+
+**Today's Progress**: Start working on the project page. Compressed and cropped all images. Also, start working on the tablet and mobile styles, especially styles on Chrome (as I developed on Firefox).
+
+Also, used React-helmet to add different page title to different routes.
+
+## Day 93: 7 Feb 2019
+
+**Today's Progress**: Start working on the project details page. Add different size of image gallery, one for details page, a bigger one for image lightbox. Created new componenet of Overlay to show bigger images.
