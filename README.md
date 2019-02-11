@@ -46,6 +46,8 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 
 [Testing Vanilla JS and HTML page using Jest](https://github.com/snowleo208/test-js-example)
 
+[Portfolio Page](https://yukicheung.atrera.com) ([Github](https://github.com/snowleo208/portfolio))
+
 ## Posts
 
 [Article: How to create responsive table in modern way](https://medium.com/@snowleo208/how-to-create-responsive-table-d1662cb62075)

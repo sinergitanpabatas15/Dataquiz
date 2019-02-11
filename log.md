@@ -421,3 +421,11 @@ Also, used React-helmet to add different page title to different routes.
 ## Day 93: 7 Feb 2019
 
 **Today's Progress**: Start working on the project details page. Add different size of image gallery, one for details page, a bigger one for image lightbox. Created new componenet of Overlay to show bigger images.
+
+## Day 94: 11 Feb 2019
+
+**Today's Progress**: Add font weight 500 fonts to portfolio page, as it looks weird on Windows. Also, started my first project with Angluar + Node.js + Typescript + Graphql, decided to create a clone of Pinterest.
+
+**Thoughts:**: This is my first time to use Typescript with Express.js, used lots of time to solve error. Also, graphql server improved a lot since my last touch of it. Last time I used express-graphql with MySQL to create Pinterest clone, but stucked with context, relay style pagination and auth side, so that project was abandoned.
+
+This time, I tried to use apollo-server with Mongodb and that is quite simple compared to express-graphql with sequelize + MySQL. Hope I can finish it! :)
