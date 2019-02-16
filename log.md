@@ -429,3 +429,11 @@ Also, used React-helmet to add different page title to different routes.
 **Thoughts:**: This is my first time to use Typescript with Express.js, used lots of time to solve error. Also, graphql server improved a lot since my last touch of it. Last time I used express-graphql with MySQL to create Pinterest clone, but stucked with context, relay style pagination and auth side, so that project was abandoned.
 
 This time, I tried to use apollo-server with Mongodb and that is quite simple compared to express-graphql with sequelize + MySQL. Hope I can finish it! :)
+
+## Day 95: 12 Feb 2019
+
+**Today's Progress**: Add webfont loader to load google web fonts and optimized for pagespeed.
+
+## Day 96: 16 Feb 2019
+
+**Today's Progress**: Fix all typescript in pinterest clone project to match with strict settings. Also added query and mutation to create user and post. Learnt a lot about typescript and its type settings!
