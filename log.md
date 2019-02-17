@@ -437,3 +437,11 @@ This time, I tried to use apollo-server with Mongodb and that is quite simple co
 ## Day 96: 16 Feb 2019
 
 **Today's Progress**: Fix all typescript in pinterest clone project to match with strict settings. Also added query and mutation to create user and post. Learnt a lot about typescript and its type settings!
+
+## Day 97: 17 Feb 2019
+
+**Today's Progress**: Upgrade all package versions of pinterest clone to latest version and added google/facebook oauth login. Finally added post and home component on client side, with router and apollo client.
+
+**Thoughts:**: This is my first time to create oauth with facebook, with Angular and apollo graphql client. Used lots of time to upgrade all packages today and fix typescript issues!
+
+Trying to find how to share styles between component in Angular too.
