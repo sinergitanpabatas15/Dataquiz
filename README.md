@@ -58,6 +58,8 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 
 [Things I learned after writing tests for JS and HTML page](https://dev.to/snowleo208/things-i-learned-after-writing-tests-for-js-and-html-page-4lja)
 
+[How to fix popup's scrolling on Safari](https://dev.to/snowleo208/how-to-fix-popups-scrolling-on-safari-3og6)
+
 ## Log
 
 [View my coding and thoughts here](https://github.com/snowleo208/100-Days-of-Code/blob/master/log.md)

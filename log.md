@@ -445,3 +445,22 @@ This time, I tried to use apollo-server with Mongodb and that is quite simple co
 **Thoughts:**: This is my first time to create oauth with facebook, with Angular and apollo graphql client. Used lots of time to upgrade all packages today and fix typescript issues!
 
 Trying to find how to share styles between component in Angular too.
+
+## Day 98: 19 Feb 2019
+
+**Today's Progress**: View few articles about functional css and styled components.
+
+[邪魔歪道還是苦口良藥？Functional CSS 經驗分享](https://blog.techbridge.cc/2019/01/26/functional-css/)
+[In defense of Functional CSS](https://www.mikecr.it/ramblings/functional-css/)
+[Stop using CSS in JavaScript for web development](https://medium.com/@gajus/stop-using-css-in-javascript-for-web-development-fa32fb873dcc)
+
+**Thoughts:**: Personally I am not advocate the use of styled components, because I think it is hard to reuse CSS in different components. Binded CSS into JS also cause some problems, for example, what if you want to change your project from React to other framework which does not support styled components?
+
+CSS does have lots of problems, but I don't think styled components is a good way to solve it. Futhermore, SASS or LESS actually do a good job, in my prospective.
+
+## Day 99: 21 Feb 2019
+
+**Today's Progress**: Struggling with Safari's scroll function! :(
+
+My result:
+[How to fix popup's scrolling on Safari](https://dev.to/snowleo208/how-to-fix-popups-scrolling-on-safari-3og6)
