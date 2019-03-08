@@ -464,3 +464,11 @@ CSS does have lots of problems, but I don't think styled components is a good wa
 
 My result:
 [How to fix popup's scrolling on Safari](https://dev.to/snowleo208/how-to-fix-popups-scrolling-on-safari-3og6)
+
+## Day 100: 22 Feb 2019
+
+**Today's Progress**: Fix redirect path in portfolio's build on netlify and added fixed menu. On the other hand, added post section for pinterest clone.
+
+**Thoughts:**: The portfolio is using React and the routing only works in the root '/', I need to add one redirect file to redirect all routes to root, in order to get different pages in Netlify. Otherwise, even the route is correct, it only shows 404 error.
+
+This is my 100th days for coding. Despite of the lag, I finally finished 100 days of code! In the future, I am trying to learn more about both backend and frontend, including .NET, Django, Angular and Vue. First, I want to try Angular and GraphQL first. Both look very promised and fun to look into.
