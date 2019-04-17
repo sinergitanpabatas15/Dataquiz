@@ -46,6 +46,18 @@ This repo is a collection of my 100 days of code journey, mostly focused on fron
 
 [Testing Vanilla JS and HTML page using Jest](https://github.com/snowleo208/test-js-example)
 
+FreeCodeCamp related HTML projects:
+
+> [Tribute Page](https://codepen.io/snowleo208/pen/bWJdMp)
+
+> [Survey Form](https://codepen.io/snowleo208/pen/wZywqj)
+
+> [Product Landing Page](https://codepen.io/snowleo208/pen/XQZbOm)
+
+> [Technical Documentation Page](https://codepen.io/snowleo208/pen/qwxbRL)
+
+> [Personal Portfolio](https://codepen.io/snowleo208/pen/gyvrBe)
+
 [Portfolio Page](https://yukicheung.atrera.com) ([Github](https://github.com/snowleo208/portfolio))
 
 ## Posts
